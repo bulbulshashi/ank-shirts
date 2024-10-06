@@ -1,0 +1,2967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C#ShirT</title>
+ <style>
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+background-color: white;
+
+}
+
+nav{
+ width: 100%;
+  height: 50px;
+  background:linear-gradient(100deg,navy,rgb(29, 29, 48));
+  display:flex;
+  justify-content: space-around;
+  border: 0.02px solid black;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  
+}
+.all{
+  width: 100%;
+}
+.ct{
+  width: 50px;
+  height: 50px;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 100%;
+}
+.hac{
+  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.home a{
+  border:.2px solid #8e8c4a;
+  background:linear-gradient(120deg,navy,rgb(12, 12, 19));
+  color: white;
+  max-width: 130px;
+  min-width: auto;
+  font-size: 20px;
+  padding: 5px;
+  cursor: pointer;
+ text-decoration: none;
+  border-radius: 7px;
+}
+
+.about{
+  border:.2px solid #8e8c4a;
+  background:linear-gradient(120deg,navy,rgb(12, 12, 19));
+  color: white;
+  max-width: 130px;
+  min-width: auto;
+  font-size: 20px;
+  padding: 5px;
+  cursor: pointer;
+  margin-left: 20px;
+  border-radius: 7px;
+}
+.cartsec{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: red;
+  width: 180px;
+  font-size: 21px;
+}
+
+.cart{
+width: 47px;
+height: 47px;
+border-radius: 50%;
+border: 2px solid  #8e8c4a ;
+padding: 0;
+display: flex;
+justify-content: space-between;
+color: bisque;
+font-size: 17px;
+}
+.cartimg{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid  #8e8c4a ;
+}
+@keyframes shake{
+from{margin-left: 67px;}
+to{margin-left: 71px;}
+}
+.carnot{
+  position: absolute;
+  margin-left: 69px;
+      display:none;
+      animation: shake;
+      animation-duration: .19s;
+      animation-iteration-count: 5;
+      animation-delay: 0ms;
+
+}
+
+
+.search{
+  display: flex;
+
+  align-items: center;
+}
+
+.cross{
+  position: absolute;
+  margin-left: 220px;
+  width: 25px;
+  height: 25px;
+  border: none;
+  font-size: 20px;
+  text-align: center;
+  border:none;
+  background-color: rgb(194, 194, 255);
+  color: gray;
+  border-radius: 10px;
+}
+
+
+.search img{
+width: 34px;
+height: 34px;
+border: 2px solid  #8e8c4a ;
+border-radius: 3px;
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+}
+.srcBtn{
+  width: 36px;
+  height: 36px;
+  border: 2px solid  #8e8c4a ;
+  border-radius: 3px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+
+}
+
+#search-bar{
+  width: 250px;
+  padding: 7px;
+  border:1px solid #8e8c4a;
+  background:linear-gradient(120deg,white,rgb(194, 194, 255));
+  color:black;
+  font-size: 16px;
+  border-radius: 3px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  
+}
+
+
+
+.shirtB{
+  width: 250px;
+  height: 360px;
+  background-color:rgb(0, 0, 0);
+  margin: none;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 230px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid black;
+
+}
+.neck{
+  background-color:white;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: absolute;
+  margin-left: 307px;
+  margin-top: 45px;
+  border-bottom: 2px solid black;
+}
+.hand1{
+  width: 67px;
+  height: 125px;
+  position: absolute;
+  margin-top: 107px;
+  margin-left: 460px;
+  background-color: rgb(0, 0, 0);
+  transform: rotate(140deg);
+  border-radius: 3px;
+    border: 1px solid black;
+}
+.hand2{
+  width: 67px;
+  height: 125px;
+  position: absolute;
+  margin-top: 107px;
+  margin-left: 184px;
+  background-color: rgb(0, 0, 0);
+  transform: rotate(40deg);
+  border-radius: 3px;
+  border: 1px solid black;
+}
+.shape1{
+  width: 60px;
+  height: 130px;
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  margin-top: 102px;
+  margin-left: 233px;
+}
+.shape2{
+  width: 60px;
+  height: 130px;
+  position: absolute;
+  background-color:rgb(0, 0, 0);
+  margin-top: 102px;
+  margin-left: 419px;
+}
+.imgBody{
+  background-color: black;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  margin-top: 180px;
+  margin-left: 283px;
+}
+
+
+
+.imgC{
+  width: 150px;
+  height: 150px;
+ border-radius: 2px;
+}
+.colors{
+  width: 345px;
+  height: 60px;
+  background-color:white;
+  margin-top: 490px;
+  margin-left: 52px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+}
+
+.red{
+  padding: 10px;
+  margin-left: 6px;
+  width: 100px;
+  border-radius: 7px;
+  font-size: 20px;
+  background-color: red;
+  color: rgb(255, 255, 255);
+}
+.green{
+  padding: 10px;
+  margin-left: 6px;
+  width: 100px;
+  border-radius: 7px;
+  font-size: 20px;
+  background-color: green;
+  color: white;
+}
+.navy{
+  padding: 10px;
+  margin-left: 6px;
+  width: 100px;
+  border-radius: 7px;
+  font-size: 20px;
+  background-color:navy;
+  color: white;
+}
+.white{
+  padding: 10px;
+  margin-left: 6px;
+  width: 100px;
+  border-radius: 7px;
+  font-size: 20px;
+  background-color: white;
+  color: black;
+
+}
+.black{
+  padding: 10px;
+  margin-left: 6px;
+  width: 100px;
+  border-radius: 7px;
+  font-size: 20px;
+  background-color: black;
+  color:white;
+}
+.brown{
+  padding: 10px;
+  margin-left: 6px;
+  width: 100px;
+  border-radius: 7px;
+  font-size: 20px;
+  background-color: brown;
+  color:white;  
+}
+.gray{
+  padding: 10px;
+  margin-left: 6px;
+  width: 100px;
+  border-radius: 7px;
+  font-size: 20px;
+  background-color: gray;
+  color:white;
+  
+}
+.glry{
+
+
+  margin-top: 140px;
+  margin-left: 700px;
+  position: absolute;
+}
+.glry button{
+width: 80px;
+height: 80px;
+border-radius: 10px;
+}
+.glry img{
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  }
+.a1{
+  width: 968px;
+    height: 100px;
+    background: linear-gradient(100deg, navy , black);
+    border: 2px solid aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin-right: 20px;
+    position: absolute;
+    margin-top: 570px;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+.a1 button{
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  }
+  .a1 img{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+
+    }
+   
+
+.a2{
+  width: 968px;
+    height: 100px;
+    background: linear-gradient(100deg, navy , black);
+    border: 2px solid aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin-right: 20px;
+    position: absolute;
+    margin-top: 680px;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+.a2 button{
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  }
+  .a2 img{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+
+    }
+   
+.a3{
+  width: 968px;
+    height: 100px;
+    background: linear-gradient(100deg, navy , black);
+    border: 2px solid aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin-right: 20px;
+    position: absolute;
+    margin-top: 790px;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+.a3 button{
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  }
+  .a3 img{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+
+    }
+   .details{
+    width: 350px;
+    position: absolute;
+    margin-left: 662px;
+    margin-top: 100px;
+    color: navy;
+    font-size: 28px;
+    text-align: left;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   .codesec{
+  
+    width: 165px;
+    background:linear-gradient(120deg,white,rgb(194, 194, 255));
+   margin-top: 10px;
+   margin-bottom: 7px;
+    color:navy;
+    font-weight: 900;
+    font-size: 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  
+  }
+  .codesec button{
+    width: 32px;
+    height: 32px;
+    margin-right: 2px;
+    border: none;
+    }
+  .codesec img{
+  width: 30px;
+  height: 30px;
+  }
+  .codesec img:hover{
+    width: 30px;
+    height: 30px;
+    border: 1px solid navy ;
+    border-radius: 3px;
+    }
+    .codesec img:active{
+      width: 30px;
+      height: 30px;
+      border:none ;
+      border-radius: 3px;
+      opacity: 0.5;
+      }
+      
+  
+  #inputcode{
+    display: none;
+  }
+  
+   .description{
+    border: none;
+    width: 130px;
+    height: 30px;
+    font-size: 19px;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+   .drodesicon{
+    width: 20px;
+    height: 20px;
+    border:none;
+   }
+   .size{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-top: 15px;
+   }
+   .sizeqb{
+    display: flex;
+    justify-content: space-around;
+    width: 220px;
+    
+   }
+   .sizeqb button{
+   border: none;
+   width:40px ;
+   color: navy;
+   font-weight: bold;
+   font-size: 18px;
+    
+   }
+   .sizeqb button:hover{
+    border:1px solid navy;
+    width:40px ;
+    color: navy;
+    font-weight: bold;
+    font-size: 21px;
+     
+    }
+   .quantity{
+    display: flex;
+  justify-content: left;
+    width: 300px;
+    margin-top: 15px;
+   }
+   .quaninput{
+    display: flex;
+    justify-content: space-around;
+    width:200px ;
+   }
+   .quaninput input{
+   color: navy;
+   font-family: Arial, Helvetica, sans-serif;
+   width: 70px;
+   font-size: 27px;
+   text-align: center;
+   border: 2px solid navy;
+   }
+   
+   .quaninput button{
+    color: navy;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 76px;
+    font-size: 21px;
+   font-weight: bold;
+    border: none;
+    }
+    .quaninput button:hover{
+      color: navy;
+      font-family: Arial, Helvetica, sans-serif;
+      width: 76px;
+      font-size: 21px;
+     font-weight: bold;
+      border:1px solid navy;
+      }
+    .addbuy{
+      position: absolute;
+      width: 260px;
+      margin-top: 490px;
+      margin-left: 710px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .addbuy button{
+   width: 122px;
+   height: 50px;
+   font-size: 21px;
+   color:white;
+   font-weight: bold;
+   background-color: navy;
+   border: none;
+    }
+    @keyframes desani{
+      from{width: 500px; height: 20px;};
+      to{width: 700px;  height: auto;};
+    }
+    .desbar{
+      width:700px;
+      height: 500px;
+      position: absolute;
+      background-color: white;
+      margin-top: 328px;
+      margin-left: 270px;
+      border: 1px solid navy;
+      display: none;
+      animation: desani;
+      animation-duration: .8s;
+      animation-direction: ease;
+    }
+    @keyframes desbtn{
+      from{opacity: .001; margin-left: 500px;};
+      to{opacity: 1;  margin-left: 666px};
+    }
+    .descross{
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border: none;
+      color: navy;
+      font-weight: bold;
+      font-size: 21px;
+      margin-left:663px ;
+      margin-top: 5px;
+      animation: desbtn;
+      animation-duration: .8s;
+      animation-direction: ease;
+    }
+    @keyframes scrt{
+      from{opacity: .001; margin-left: 500px;};
+      to{opacity: 1;  margin-left: 180px};
+    }
+    .showcart{
+      width: 700px;
+      height: 80px;
+      position: absolute;
+      
+      background-color: navy;
+      margin-top: 100px;
+      margin-left: 180px;
+      animation: scrt;
+      animation-duration: .8s;
+      display: none;
+    }
+    .showcartcross{
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border: none;
+      color: navy;
+      font-weight: bold;
+      font-size: 22px;
+      margin-left:653px ;
+      margin-top: 5px;
+      animation: desbtn;
+      animation-duration: .8s;
+      animation-direction: ease;
+    }
+    .cartbody{
+     width: 660px;
+     height: 150px;
+      position: absolute;
+      margin-top: 80px;
+      margin-left: 10px;
+      background-color: white;
+    }
+    .cp1{
+      width: 660px;
+      height: 150px;
+      border: 5px solid navy;
+      margin: 3px;
+      background-color: rgb(255, 255, 255);
+      display: none;
+    }
+    .cp2{
+      width: 660px;
+      height: 150px;
+      border: 5px solid navy;
+      margin: 3px;
+      background-color: rgb(255, 255, 255);
+      display: none;
+    }
+    .cp3{
+      width: 660px;
+      height: 150px;
+      border: 5px solid navy;
+      margin: 3px;
+      background-color: rgb(255, 255, 255);
+      display: none;
+    }
+    .cp4{
+      width: 660px;
+      height: 150px;
+      border: 5px solid navy;
+      margin: 3px;
+      background-color: rgb(255, 255, 255);
+      display: none;
+    }
+    .cp5{
+      width: 660px;
+      height: 150px;
+      border: 5px solid navy;
+      margin: 3px;
+      background-color: rgb(255, 255, 255);
+      display: none;
+    }
+    .cp6{
+      width: 660px;
+      height: 150px;
+      border: 5px solid navy;
+      margin: 3px;
+      background-color: rgb(255, 255, 255);
+      display: none;
+    }
+    .cp7{
+      width: 660px;
+      height: 150px;
+      border: 5px solid navy;
+      margin: 3px;
+      background-color: rgb(255, 255, 255);
+      display: none;
+    }
+    .cp8{
+      width: 660px;
+      height: 150px;
+      border: 5px solid navy;
+      margin: 3px;
+      background-color: rgb(255, 255, 255);
+      display: none;
+    }
+    .cp9{
+      width: 660px;
+      height: 150px;
+      border: 5px solid navy;
+      margin: 3px;
+      background-color: rgb(255, 255, 255);
+      display: none;
+    }
+    .cp10{
+      width: 660px;
+      height: 150px;
+      border: 5px solid navy;
+      margin: 3px;
+      background-color: rgb(255, 255, 255);
+      display: none;
+    }
+   
+.minshirtB ,.minshirtB2, .minshirtB3, .minshirtB4, .minshirtB5, .minshirtB6, .minshirtB7, .minshirtB8, .minshirtB9, .minshirtB0 {
+  width: 80px;
+  height: 110px;
+  background-color:rgb(0, 0, 0);
+  margin: none;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 50px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid black;
+
+}
+.minneck, .minneck2,.minneck3,.minneck4,.minneck5,.minneck6,.minneck7,.minneck8,.minneck9,.minneck0{
+  background-color:rgb(255, 255, 255);
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  position: absolute;
+  margin-left: 72px;
+  margin-top: 1px;
+  border-bottom: 2px solid black;
+}
+.minhand1,.minhand12,.minhand13,.minhand14,.minhand15,.minhand16,.minhand17,.minhand18,.minhand19,.minhand10{
+  width: 25px;
+  height: 44px;
+  position: absolute;
+  margin-top: 23px;
+  margin-left: 122px;
+  background-color: rgb(0, 0, 0);
+  transform: rotate(140deg);
+  border-radius: 3px;
+    border: 1px solid black;
+}
+.minhand2,.minhand22,.minhand23,.minhand24,.minhand25,.minhand26,.minhand27,.minhand28,.minhand29,.minhand20 {
+  width: 25px;
+  height: 44px;
+  position: absolute;
+  margin-top: 23px;
+  margin-left: 35px;
+  background-color: rgb(0, 0, 0);
+  transform: rotate(40deg);
+  border-radius: 3px;
+  border: 1px solid black;
+}
+.minshape1,.minshape12,.minshape13,.minshape14,.minshape15,.minshape16,.minshape17,.minshape18,.minshape19,.minshape10{
+  width: 18px;
+  height: 100px;
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  margin-top: 22px;
+  margin-left: 53px;
+}
+.minshape2,.minshape22,.minshape23,.minshape24,.minshape25,.minshape26,.minshape27,.minshape28,.minshape29,.minshape20{
+  width: 18px;
+  height: 100px;
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  margin-top: 22px;
+  margin-left: 110px;
+}
+.minimgBody,.minimgBody2,.minimgBody3,.minimgBody4,.minimgBody5,.minimgBody6,.minimgBody7,.minimgBody8,.minimgBody9,.minimgBody0{
+  background-color: rgb(0, 0, 0);
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  margin-top: 45px;
+  margin-left: 67px;
+}
+
+
+
+.minimgC, .minimgC2 , .minimgC3 ,.minimgC4 , .minimgC5, .minimgC6 , .minimgC7, .minimgC8, .minimgC9, .minimgC0{
+  width: 48px;
+  height: 48px;
+ border-radius: 2px;
+}
+
+.cp1cross,.cp2cross,.cp3cross,.cp4cross,.cp5cross,.cp6cross,.cp7cross,.cp8cross,.cp9cross,.cp10cross{
+  border: none;
+  position: absolute;
+  margin-top: 6px;
+  margin-left: 619px;
+  width: 26px;
+  height: 26px;
+  font-size: 21px;
+  color: navy;
+
+}
+.cardes1,.cardes2,.cardes3,.cardes4,.cardes5,.cardes6,.cardes7,.cardes8,.cardes9,.cardes10{
+  width: 310px;
+  position: absolute;
+  margin-left: 180px;
+  margin-top: 12px;
+  font-size: 20px;
+}
+.desminquan1,.desminquan2,.desminquan3,.desminquan4,.desminquan5,.desminquan6,.desminquan7,.desminquan8,.desminquan9,.desminquan10{
+  display: flex;
+
+}
+.desminquanin1,.desminquanin2,.desminquanin3,.desminquanin4,.desminquanin5,.desminquanin6,.desminquanin7,.desminquanin8,.desminquanin9,.desminquanin10{
+  width: 50px;
+  height: 25px;
+  font-size: 19px;
+  text-align: center;
+  font-weight: bold;
+  color: navy;
+}
+
+.minsizesec1,.minsizesec2,.minsizesec3,.minsizesec4,.minsizesec5,.minsizesec6,.minsizesec7,.minsizesec8,.minsizesec9,.minsizesec10{
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.mm10,.mm9,.mm8,.mm7,.mm6,.mm5,.mm4,.mm3,.mm2,.mm1,.ml10,.ml9,.ml8,.ml7,.ml6,.ml5,.ml4,.ml3,.ml2,.ml1,.mxl10,.mxl9,.mxl8,.mxl7,.mxl6,.mxl5,.mxl4,.mxl3,.mxl2,.mxl1,.mxxl10,.mxxl9,.mxxl8,.mxxl7,.mxxl6,.mxxl5,.mxxl4,.mxxl3,.mxxl2,.mxxl1{
+  border: none;
+  width:26px ;
+ 
+  color: navy;
+  font-weight: bold;
+  font-size: 12px;
+   
+  }
+
+  .mincode1,.mincode2,.mincode3,.mincode4,.mincode5,.mincode6,.mincode7,.mincode8,.mincode9,.mincode10{
+    position: absolute;
+    width: auto;
+    font-size: 19px;
+    color: navy;
+    margin-left: 485px;
+    margin-top: 13px;
+    font-weight: bold;
+    background: linear-gradient(120deg,white,rgb(176, 171, 247));
+  }
+.desminquan1,.desminquan2,.desminquan3,.desminquan4,.desminquan5,.desminquan6,.desminquan7,.desminquan8,.desminquan9,.desminquan10{
+
+display: flex;
+justify-content:space-around;
+width: 220px;
+
+}
+  .msub1,.msub2,.msub3,.msub4,.msub5,.msub6,.msub7,.msub8,.msub9,.msub10{
+
+    width: 55px;
+    font-size: 14px;
+    border:none;
+    color: navy;
+    font-weight: bold;
+   
+    display:none ;
+  }
+
+  .buynowpopup{
+    position: absolute;
+    background-color:white;
+    width: 750px;
+    height:1760px;
+    margin-top: 100px;
+    margin-left: 150px;
+    border: 1px solid navy;
+    display: none;
+  }
+  .buynowcaption{
+    background-color: navy;
+    width: 750px;
+    height: 80px;
+  }
+  .buynowcaption b{
+    font-size: 32px;
+    color: white;
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 22px;
+  }
+.byncross{
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  color: navy;
+  font-size: 23px;
+  margin-left: 700px;
+  margin-top: 5px;
+
+}
+.yourps{
+  position: absolute;
+ 
+  width: 700px;
+ 
+}
+.yourps b{
+  font-size: 25px;
+  position: absolute;
+  margin-top: 25px;
+  font-weight: bold;
+  margin-left: 50px;
+  color: navy;
+
+}
+.psall{
+  width: 350px;
+  height: 150px;
+  position: absolute;
+  margin-left: 350px;
+  display: flex;
+justify-content: space-around;
+margin-top: 25px;
+font-size: 21px;
+color: green;
+font-weight: bold;
+text-align:left;
+
+}
+  
+.buynowquantity{
+position: absolute;
+margin-top: 250px;
+margin-left: 50px;
+}
+.buynowquantity b{
+position: absolute;
+font-size: 25px;
+color: navy;
+font-weight: bold;
+
+}
+.bynquanvalue{
+position: absolute;
+margin-left: 300px;
+font-size: 27px;
+}
+  
+.buynowtotal{
+  position: absolute;
+  margin-top: 290px;
+  margin-left: 50px;
+  
+}
+
+.buynowtotal b{
+position: absolute;
+  color: navy;
+  font-size: 25px;
+  font-weight: bold;
+
+}
+
+.byntotalvalue{
+  position: absolute;
+  margin-left: 300px;
+  font-size: 25px;
+  font-weight: bold;
+  color:#ff0000;
+}
+.buynownettotal{
+  position: absolute;
+  margin-top: 370px;
+  margin-left: 50px;
+
+  
+}
+
+.buynownettotal b{
+
+  color: navy;
+  font-size: 30px;
+  font-weight: bold;
+  
+
+}
+
+.bynnettotalvalue{
+  position: absolute;
+  margin-left: 150px;
+  font-size: px;
+  font-weight: bold;
+  color:#ff0000;
+}
+
+.byntotcur{
+  position: absolute;
+  margin-left: 380px;
+  color: navy;
+}
+.bynnameinput{
+  position: absolute;
+  margin-top: 450px;
+  margin-left: 50px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: navy;
+  width: 650px;
+}
+.bynnameinputvalue ,.bynnumberalinputvalue  ,.bynemailinputvalue{
+  width: 350px;
+  height: 40px;
+  font-size: 21PX;
+  border-radius: 2px;
+  padding: 10PX;
+  text-decoration: none;
+  border: 1px solid navy;
+
+}
+.bynnumberinputvalue{
+width: 370px;
+height: 40px;
+font-size: 21PX;
+border-radius: 2px;
+padding: 10PX;
+text-decoration: none;
+margin-right: 30px;
+}
+.bynnamesubmit,.bynnumbersubmit,.bynnumberalsubmit,.bynemailsubmit{
+  margin-left: 20px;
+  color: navy;
+  border: none;
+  width: 70px;
+  height: 40px;
+  color: navy;
+  font-weight: bold;
+  font-size: 19px;
+}
+.bynnumberinput{
+  position: absolute;
+  margin-top: 515px;
+  margin-left: 50px;
+  font-size: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: navy;
+  width: 650px;
+}
+.bynnumberalinput{
+  position: absolute;
+  margin-top: 590px;
+  margin-left: 50px;
+
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: navy;
+  width: 650px;
+}
+.bynemailinput{
+  position: absolute;
+  margin-top: 660px;
+  margin-left: 50px;
+  font-size: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: navy;
+  width: 650px;
+}
+.buynowdc{
+  position: absolute;
+  margin-top: 325px;
+  margin-left: 50px;
+  
+}
+.dass{
+  position: absolute;
+  margin-top: 730px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.division,.district,.upazilla,.union,.village,.house,.enteraddress{
+  font-size: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: navy;
+  width: 650px;
+  height: 50px;
+  margin-top: 25px;
+}
+
+.divisioninput,.disrictinput,.upazillainput,.unioninput,.villageinput,.houseinput{
+
+  font-size: 21px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: navy;
+  width: 350px;
+  height: 40px;
+  border: 1px solid navy;
+  padding: 10px;
+}
+.divisionsubmit,.districtsubmit,.upazillasubmit,.unionsubmit,.villagesubmit,.housesubmit,.enteraddressbtn{
+  margin-left: 20px;
+  color: navy;
+  border: none;
+  width: 70px;
+  height: 40px;
+  color: navy;
+  font-weight: bold;
+  font-size: 19px;
+}
+.pmd{
+  position: absolute;
+  margin-top: 1290px;
+  margin-left: 50px;
+  font-size: 27px;
+  color: navy;
+}
+.bignext{
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  font-size: 32px;
+  border: none;
+  color: navy;
+  font-weight: bold;
+  margin-top: 1600px;
+  margin-left: 320px;
+}
+.fnext{
+  position: absolute;
+  margin-top: 360px;
+ margin-left: 630px;
+  color: navy;
+  border: none;
+  width: 70px;
+  height: 40px;
+  color: navy;
+  font-weight: bold;
+  font-size: 19px;
+}
+.afterbnext{
+  position: absolute;
+  background-color:white;
+  width: 750px;
+  height:800px;
+  margin-top: 100px;
+  margin-left: 150px;
+  border: 1px solid navy;
+  
+}
+.afterbnexttop{
+  width: 750px;
+  height: 60px;
+  background-color: navy;
+
+}
+.afterbnextcross{
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  color: navy;
+  font-size: 23px;
+  margin-left: 700px;
+  margin-top: 5px;
+
+}
+.aftbncibtn{
+  position: absolute;
+  width: 400px;
+  height: 80pxs;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 120px;
+  margin-left: 180px;
+}
+.aftbncibtn button{
+width: 100px;
+height: 50px;
+border: none;
+font-size: 32px;
+font-weight: bold;
+color: rgb(255, 255, 255);
+}
+ </style>
+</head>
+<body>
+  
+
+<nav>
+<div class="logo"><img class="ct" src="images/cshirt ss.jpg"></div>
+<div class="hac"><div class="home"><a href="/">Home</a></div> <button class="about">About</button> </div>
+<div class="search">
+    <input id="search-bar" type="search" placeholder="Search C#ShirT" >
+    <button class="cross" onclick="searchBar.value ='';">x</button>
+  <button class="srcBtn"><img src="images/SEARCHICON.jpg" alt=""></button>
+</div>
+
+<div class="cartsec">
+  <div class="cartlogSec">
+  
+    <button class="cart" onclick="SCart();"> <img class="cartimg" src="images/crt blue.jpg" alt=""> <b id="cartnote">0</b></button>
+   
+   </div>
+    <div class="carnot">
+      Cart is Full!
+    </div>
+</div>
+
+
+
+</nav>
+<div class="all">
+  
+<div class="shirtB">
+</div>
+
+<div class="hand1"></div>
+<div class="hand2"></div>
+<div class="neck"></div>
+<div class="shape1"></div>
+<div class="shape2"></div>
+<div class="imgBody">
+  <img class="imgC" src="images/images (15) (5).jpeg" alt="">
+</div>
+
+<div class="details">
+  <div class="cap">Men's T-shirts(Select your Perfect Colour and Design)(200+ premium quality combinations)</div>
+  <div class="codesec">
+    <b class="cotext">#BL131</b>
+   <button class="copy" onclick="copy();"> <img src="images/copy.jpg" alt=""></button>
+  </div>
+  
+  
+  <div class="des">
+  <button class="description" onclick="Description();" >Description   <img class="drodesicon" src="images/drop icon1.jpg" alt=""></button>
+
+  </div>
+  <div class="func">
+  <b style="color: navy; font-size: 27px; ">Price:</b> <b style="color:green; font-size: 27px; ">399</b> <b style="color: navy; font-size: 27px; ">BDT</b>
+  <div class="size">
+    <b style="color: navy; font-size: 27px;">Size:</b>
+    <div class="sizeqb">
+      <button class="m" onclick="M.style.border = '2px solid navy';L.style.border = 'none'; XL.style.border = 'none'; XXL.style.border = 'none';  sizecode='M';Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode;copyText.value = Code.innerText; ">M</button>
+      <button class="l" onclick="M.style.border = '2px';L.style.border = '2px solid navy'; XL.style.border = 'none'; XXL.style.border = 'none';  sizecode='L';Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode;minSize1 = 'L';minSize2 = 'L';minSize3 = 'L';minSize4 = 'L';minSize5 = 'L';minSize6 = 'L'; minSize7 = 'L';minSize8 = 'L';minSize9 = 'L';minSize10 = 'L';  copyText.value = Code.innerText; ">L</button>
+      <button class="xl" onclick="M.style.border = '2px';L.style.border = 'none'; XL.style.border = '2px solid navy'; XXL.style.border = 'none';  sizecode='XL';Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode;minSize1 = 'XL';minSize2 = 'XL';minSize3 = 'XL';minSize4 = 'XL';minSize5 = 'XL';minSize6 = 'XL'; minSize7 = 'XL';minSize8 = 'XL';minSize9 = 'XL';minSize10 = 'XL'; copyText.value = Code.innerText; ">XL</button>
+      <button class="xxl" onclick="M.style.border = '2px';L.style.border = 'none'; XL.style.border = 'none'; XXL.style.border = '2px solid navy'; sizecode='XXL';Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; ;minSize1 = 'XXL';minSize2 = 'XXL';minSize3 = 'XXL';minSize4 = 'XXL';minSize5 = 'XXL';minSize6 = 'XXL'; minSize7 = 'XXL';minSize8 = 'XXL';minSize9 = 'XXL';minSize10 = 'XXL'; copyText.value = Code.innerText; " >XXL</button>
+    </div>
+  </div>
+  <div class="quantity">
+    <b  style="color: navy; font-size: 27px;">Quantity:</b>
+
+    <div class="quaninput">
+      <input class="quaninp" type="number" value="1" onclick="SubmitQ.style.display = 'block';"> <button class="submitq" onclick="   qntcode = quantinp.value  ; Code.innerText = '#' + colorCode + desCode + sizecode + qntcode; copyText.value = Code.innerText;SubmitQ.style.display = 'none'; ">Submit</button>
+    </div>
+
+  </div>
+
+</div>
+  
+  </div>
+  <div class="addbuy">
+    <button class="add"  onclick="  kkk = kkk+1; CartNote(); atC();">Add to Cart</button>
+    <button class="buy" onclick="buyBF();">Buy Now</button>
+  </div>
+
+<div class="a1">
+  <button class="aa" onclick="ImgC.src ='images/pirate-typeface_1284-47241.jpg' ; desCode = '11' ; Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText; " ><img src="images/pirate-typeface_1284-47241.jpg" alt=""></button>
+  <button class="ab" onclick="ImgC.src ='images/063b71979f6a36838c2528a5db87ebe7-4431c49ad8c537144bc0ee140a8a110c16693018405482.png' ; desCode = '12' ; Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText; " ><img src="images/063b71979f6a36838c2528a5db87ebe7-4431c49ad8c537144bc0ee140a8a110c16693018405482.png" alt=""></button>
+  <button class="ac" onclick="ImgC.src ='images/images (15) (3).jpeg' ; desCode = '13' ; Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText; "><img src="images/images (15) (3).jpeg" alt=""></button>
+  <button class="ab" onclick="ImgC.src ='images/d05359d18615041ae6c3993a4b111d3f.jpg' ; desCode = '14' ; Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText; " ><img src="images/d05359d18615041ae6c3993a4b111d3f.jpg" alt=""></button>
+  <button class="aa" onclick="ImgC.src ='images/images (15) (7).jpeg' ; desCode = '15' ; Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText; " ><img src="images/images (15) (7).jpeg" alt=""></button>
+  <button class="ab" onclick="ImgC.src ='images/raf,360x360,075,t,fafafa_ca443f4786.jpg' ; desCode = '16' ; Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText; " ><img src="images/raf,360x360,075,t,fafafa_ca443f4786.jpg" alt=""></button>
+  <button class="ac" onclick="ImgC.src ='images/images (15) (4).jpeg' ; desCode = '17' ; Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText; "><img src="images/images (15) (4).jpeg" alt=""></button>
+ <button class="ab" onclick="ImgC.src ='images/images 99.jpeg' ; desCode = '18' ; Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText; " ><img src="images/images 99.jpeg" alt=""></button>
+  <button class="ac" onclick="ImgC.src ='images/images (15) (5).jpeg' ; desCode = '19' ; Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText; "><img src="images/images (15) (5).jpeg" alt=""></button>
+  <button class="ac" onclick="ImgC.src ='images/midsld.jpg' ; desCode = '1T' ; Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText; "><img src="images/midsld.jpg" alt=""></button>
+
+</div>
+  <div class="a2">
+  <button class="aa" onclick="ImgC.src ='images/vintage-gammal-tag-t-shirt-design-klistermaerke.jpg' ; desCode = '21' ; Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText; " ><img src="images/vintage-gammal-tag-t-shirt-design-klistermaerke.jpg" alt=""></button>
+   <button class="aa" onclick=" ImgC.src ='images/images.png'; desCode = '22' ; Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode;   copyText.value = Code.innerText; "><img src="images/images.png" alt=""></button>
+   <button class="ab" onclick="ImgC.src ='images/240_F_398219236_3fgvgb5LS4jDfkzajmeZXV828ipK07It.jpg' ;  desCode = '23' ; Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText; "><img src="images/240_F_398219236_3fgvgb5LS4jDfkzajmeZXV828ipK07It.jpg" alt=""></button>
+   <button class="ac" onclick="ImgC.src ='images/Screenshot 2024-09-29 122837.jpg' ;  desCode = '24' ;Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText; "><img src="images/Screenshot 2024-09-29 122837.jpg" alt=""></button>
+   <button class="aa" onclick="ImgC.src ='images/d1.jpg' ;  desCode = '25' ; Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText; "><img src="images/d1.jpg" alt=""></button>
+   <button class="ab" onclick="ImgC.src ='images/futfute sundor 1.png' ;  desCode = '26' ; Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText; "><img src="images/futfute sundor 1.png" alt=""></button>
+   <button class="ac" onclick="ImgC.src ='images/quote-simple-motivational-minimalism-wallpaper-preview.jpg' ;  desCode = '27' ; Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText; "><img src="images/quote-simple-motivational-minimalism-wallpaper-preview.jpg" alt=""></button>
+   <button class="ab" onclick="ImgC.src ='images/Screenshot_20231105-141118_WhatsApp.png' ;  desCode = '28' ; Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText; " ><img src="images/Screenshot_20231105-141118_WhatsApp.png" alt=""></button>
+   <button class="ac" onclick="ImgC.src ='images/Idiots (2).jpg' ;  desCode = '29' ; Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText; "><img src="images/Idiots (2).jpg" alt=""></button>
+   <button class="ac" onclick="ImgC.src ='images/positive.jpg' ; desCode = '2T' ; Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText; "><img src="images/positive.jpg" alt=""></button>
+  </div>
+  <div class="a3">
+    
+    <button class="aa" onclick="ImgC.src ='images/panda.png' ;  desCode = '31' ; Code.innerText = '#' + colorCode + desCode+ sizecode + qntcode; copyText.value = Code.innerText; " ><img src="images/panda.png" alt=""></button>
+   
+  </div>
+  
+<div class="colors">
+  <button class="red" onclick="ReD();">RED</button>
+  <button class="green"  onclick="GrN();">GREEN</button>
+  <button class="navy"  onclick="BlU();">NAVY</button>
+  <button class="white"  onclick="WT();">WHITE</button>
+  <button class="black"  onclick="bLk();">BLACK</button>
+  <button class="brown"  onclick="bRn();">BROWN</button>
+  <button class="gray"  onclick="gRy();">GRAY</button>
+</div>
+
+<!-- added later, input style is in code section -->
+
+<input type="text" value="#BL131" id="inputcode">
+
+<div class="desbar">
+
+<button class="descross" onclick="desBar.style.display = 'none'; n = 0;">
+  x
+</button>
+</div>
+
+<div class="showcart">
+  <b style="color: rgb(255, 255, 255); font-size: 40px; position: absolute; margin-top: 5px; margin-left: 315px;">Cart</b>
+  <button class="showcartcross" onclick="showCart.style.display = 'none';m =0;">
+    x
+  </button>
+
+<div class="cartbody">
+  <div class="cp10">
+    <div class="minshirtB0">
+    </div>
+    
+    <div class="minhand10"></div>
+    <div class="minhand20"></div>
+    <div class="minneck0"></div>
+    <div class="minshape10"></div>
+    <div class="minshape20"></div>
+    <div class="minimgBody0">
+      <img class="minimgC0" src="images/images (15) (5).jpeg" alt="">
+    </div>
+    <div class="cardes10">
+      <b style="color: navy; font-size: 21px;">Men's premium quality T-shirt</b>
+      <b style="color: navy;">Price: </b><b style="color:red;"> 399 </b><b style="color: navy;"> BDT</b> 
+      <div class="minsizesec10"><b style="color: navy; font-size: 19px;">Size:</b>
+        <button class="mm10" onclick="mM10.style.border='2px solid navy'; mL10.style.border='none';mXL10.style.border='none';mXXL10.style.border='none';minSize10 ='M';mtemcode10 ='#'+ minfnode10 + minSize10;minCode10.innerText = mtemcode10 + desMINquanIN10.value;">M</button> 
+        <button class="ml10" onclick="mM10.style.border='none'; mL10.style.border='2px solid navy';mXL10.style.border='none';mXXL10.style.border='none';minSize10 = 'L';mtemcode10 = '#'+ minfnode10 + minSize10;minCode10.innerText = mtemcode10 + desMINquanIN10.value;">L</button> 
+        <button class="mxl10" onclick="mM10.style.border='none'; mL10.style.border='none';mXL10.style.border='2px solid navy';mXXL10.style.border='none';minSize10 = 'XL';mtemcode10 = '#'+ minfnode10 + minSize10;minCode10.innerText = mtemcode10 + desMINquanIN10.value;">XL</button> 
+        <button class="mxxl10" onclick="mM10.style.border='none'; mL10.style.border='none';mXL10.style.border='none';mXXL10.style.border='2px solid navy';minSize10 = 'XXL';mtemcode10 = '#'+ minfnode10 + minSize10;minCode10.innerText = mtemcode10 + desMINquanIN10.value;">XXL</button> 
+     
+      </div>
+      <div class="desminquan10"><b style="color: navy; font-size: 19px;">Quantity:</b> <input type="number" value="1" class="desminquanin10" onclick="Msub10.style.display = 'block';"><button class="msub10" onclick="Msub10.style.display = 'none';mtemcode10 ='#'+ minfnode10 + minSize10;minCode10.innerText = mtemcode10 + desMINquanIN10.value;Tpm10.textContent = eval( 399 * desMINquanIN10.value);">Submit</button></div>
+      <b style="color: navy; font-size: 21px;">Total:</b><b style="color:red;font-size: 20px;" class="tpm10"> 399 </b><b style="color: navy;"> BDT</b>
+     </div>
+    
+
+    <button class="cp10cross" onclick="Cp10.style.display = 'none'; c=c-1; jjj = 10;cartNote.innerText = c ; crossminC(); ">x</button>
+    <div class="mincode10"></div>
+  </div>
+  <div class="cp9">
+    <div class="minshirtB9">
+    </div>
+    
+    <div class="minhand19"></div>
+    <div class="minhand29"></div>
+    <div class="minneck9"></div>
+    <div class="minshape19"></div>
+    <div class="minshape29"></div>
+    <div class="minimgBody9">
+      <img class="minimgC9" src="images/images (15) (5).jpeg" alt="">
+    </div>
+   <div class="cardes9">
+    <b style="color: navy; font-size: 21px;">Men's premium quality T-shirt</b>
+    <b style="color: navy;">Price: </b><b style="color:red;">399</b><b style="color: navy;"> BDT</b>
+    <div class="minsizesec9"><b style="color: navy; font-size: 19px;">Size:</b>
+      <button class="mm9" onclick="mM9.style.border='2px solid navy'; mL9.style.border='none';mXL9.style.border='none';mXXL9.style.border='none';minSize9 = 'M';mtemcode9 = '#'+ minfnode9 + minSize9;minCode9.innerText = mtemcode9 + desMINquanIN9.value;">M</button> 
+      <button class="ml9" onclick="mM9.style.border='none'; mL9.style.border='2px solid navy';mXL9.style.border='none';mXXL9.style.border='none';minSize9 = 'L';mtemcode9 = '#'+ minfnode9 + minSize9;minCode9.innerText = mtemcode9 + desMINquanIN9.value;">L</button> 
+      <button class="mxl9" onclick="mM9.style.border='none'; mL9.style.border='none';mXL9.style.border='2px solid navy';mXXL9.style.border='none';minSize9 = 'XL';mtemcode9 = '#'+ minfnode9 + minSize9;minCode9.innerText = mtemcode9 + desMINquanIN9.value;">XL</button> 
+      <button class="mxxl9" onclick="mM9.style.border='none'; mL9.style.border='none';mXL9.style.border='none';mXXL9.style.border='2px solid navy';minSize9 = 'XXL';mtemcode9 = '#'+ minfnode9 + minSize9;minCode9.innerText = mtemcode9 + desMINquanIN9.value;">XXL</button> 
+   
+    </div>
+    <div class="desminquan9"><b style="color: navy; font-size: 19px;">Quantity:</b> <input type="number" value="1" class="desminquanin9"  onclick="Msub9.style.display = 'block';"><button class="msub9" onclick="Msub9.style.display = 'none'; mtemcode9 ='#'+ minfnode9 + minSize9;minCode9.innerText = mtemcode9 + desMINquanIN9.value; Tpm9.textContent = eval( 399 * desMINquanIN9.value);">Submit</button></div>
+    <b style="color: navy; font-size: 21px;">Total:</b><b class='tpm9' style="color:red;font-size: 20px;"> 399 </b><b style="color: navy;"> BDT</b>
+
+    </b>
+   </div>
+
+
+    <button class="cp9cross" onclick="Cp9.style.display = 'none'; c=c-1; iii = 9;cartNote.innerText = c ;  crossminC(); ">x</button>
+    <div class="mincode9"></div>
+  </div>
+  <div class="cp8">
+    <div class="minshirtB8">
+    </div>
+    
+    <div class="minhand18"></div>
+    <div class="minhand28"></div>
+    <div class="minneck8"></div>
+    <div class="minshape18"></div>
+    <div class="minshape28"></div>
+    <div class="minimgBody8">
+      <img class="minimgC8" src="images/images (15) (5).jpeg" alt="">
+    </div>
+    <div class="cardes8">
+      <b style="color: navy; font-size: 21px;">Men's premium quality T-shirt</b>
+      <b style="color: navy;">Price: </b><b style="color:red;"> 399 </b><b style="color: navy;"> BDT</b> 
+      <div class="minsizesec8"><b style="color: navy; font-size: 19px;">Size:</b>
+        <button class="mm8" onclick="mM8.style.border='2px solid navy'; mL8.style.border='none';mXL8.style.border='none';mXXL8.style.border='none';minSize8 = 'M';mtemcode8 = '#'+ minfnode8 + minSize8;minCode8.innerText = mtemcode8 + desMINquanIN8.value;">M</button> 
+        <button class="ml8" onclick="mM8.style.border='none'; mL8.style.border='2px solid navy';mXL8.style.border='none';mXXL8.style.border='none';minSize8 = 'L';mtemcode8 = '#'+ minfnode8 + minSize8;minCode8.innerText = mtemcode8 + desMINquanIN8.value;">L</button> 
+        <button class="mxl8" onclick="mM8.style.border='none'; mL8.style.border='none';mXL8.style.border='2px solid navy';mXXL8.style.border='none';minSize8 = 'XL';mtemcode8 = '#'+ minfnode8 + minSize8;minCode8.innerText = mtemcode8 + desMINquanIN8.value;">XL</button> 
+        <button class="mxxl8" onclick="mM8.style.border='none'; mL8.style.border='none';mXL8.style.border='none';mXXL8.style.border='2px solid navy';minSize8 = 'XXL';mtemcode8 = '#'+ minfnode8 + minSize8;minCode8.innerText = mtemcode8 + desMINquanIN8.value;">XXL</button> 
+      
+      </div>
+      <div class="desminquan8"><b style="color: navy; font-size: 19px;">Quantity:</b> <input type="number" value="1" class="desminquanin8"  onclick="Msub8.style.display = 'block';"> <button class="msub8" onclick="Msub8.style.display = 'none'; mtemcode8 ='#'+ minfnode8 + minSize8;minCode8.innerText = mtemcode8 + desMINquanIN8.value;Tpm8.textContent = eval( 399 * desMINquanIN8.value);">Submit</button></div>
+      <b style="color: navy; font-size: 21px;">Total:</b><b class='tpm8' style="color:red;font-size: 20px;"> 399 </b><b style="color: navy;"> BDT</b>
+  
+      </b>
+     </div>
+
+    <button class="cp8cross" onclick="Cp8.style.display = 'none'; c=c-1; hhh = 8; cartNote.innerText = c ;  crossminC(); ">x</button>
+    <div class="mincode8"></div>
+  </div>
+
+  <div class="cp7">
+    <div class="minshirtB7">
+    </div>
+    
+    <div class="minhand17"></div>
+    <div class="minhand27"></div>
+    <div class="minneck7"></div>
+    <div class="minshape17"></div>
+    <div class="minshape27"></div>
+    <div class="minimgBody7">
+      <img class="minimgC7" src="images/images (15) (5).jpeg" alt="">
+    </div>
+    <div class="cardes7">
+      <b style="color: navy; font-size: 21px;">Men's premium quality T-shirt</b>
+      <b style="color: navy;">Price: </b><b style="color:red;"> 399 </b><b style="color: navy;"> BDT</b> 
+      <div class="minsizesec7"><b style="color: navy; font-size: 19px;">Size:</b>
+        <button class="mm7" onclick="mM7.style.border='2px solid navy'; mL7.style.border='none';mXL7.style.border='none';mXXL7.style.border='none';minSize7 = 'M';mtemcode7 = '#'+ minfnode7 + minSize7;minCode7.innerText = mtemcode7 + desMINquanIN7.value;;">M</button> 
+        <button class="ml7" onclick="mM7.style.border='none'; mL7.style.border='2px solid navy';mXL7.style.border='none';mXXL7.style.border='none';minSize7 = 'L';mtemcode7 = '#'+ minfnode7 + minSize7;minCode7.innerText = mtemcode7 + desMINquanIN7.value;;">L</button> 
+        <button class="mxl7" onclick="mM7.style.border='none'; mL7.style.border='none';mXL7.style.border='2px solid navy';mXXL7.style.border='none';minSize7 = 'XL';mtemcode7 = '#'+ minfnode7 + minSize7;minCode7.innerText = mtemcode7 + desMINquanIN7.value;;">XL</button> 
+        <button class="mxxl7" onclick="mM7.style.border='none'; mL7.style.border='none';mXL7.style.border='none';mXXL7.style.border='2px solid navy';minSize7 = 'XXL';mtemcode7 = '#'+ minfnode7 + minSize7;minCode7.innerText = mtemcode7 + desMINquanIN7.value;;">XXL</button> 
+      </div>
+      <div class="desminquan7"><b style="color: navy; font-size: 19px;">Quantity:</b> <input type="number" value="1" class="desminquanin7"  onclick="Msub7.style.display = 'block';"><button class="msub7" onclick="Msub7.style.display = 'none'; mtemcode7 ='#'+ minfnode7 + minSize7;minCode7.innerText = mtemcode7 + desMINquanIN7.value; Tpm7.textContent = eval( 399 * desMINquanIN7.value);">Submit</button></div>
+      <b style="color: navy; font-size: 21px;">Total:</b><b class='tpm7' style="color:red;font-size: 20px;"> 399 </b><b style="color: navy;"> BDT </b>
+     </div>
+    <button class="cp7cross" onclick="Cp7.style.display = 'none'; c=c-1; ggg = 7;cartNote.innerText = c ;  crossminC(); ">x</button>
+    <div class="mincode7"></div>
+  </div>
+  <div class="cp6">
+    <div class="minshirtB6">
+    </div>
+    
+    <div class="minhand16"></div>
+    <div class="minhand26"></div>
+    <div class="minneck6"></div>
+    <div class="minshape16"></div>
+    <div class="minshape26"></div>
+    <div class="minimgBody6">
+      <img class="minimgC6" src="images/images (15) (5).jpeg" alt="">
+    </div>
+    <div class="cardes6">
+      <b style="color: navy; font-size: 21px;">Men's premium quality T-shirt</b>
+      <b style="color: navy;">Price: </b><b style="color:red;"> 399 </b><b style="color: navy;"> BDT</b> 
+      <div class="minsizesec6"><b style="color: navy; font-size: 19px;">Size:</b>
+        <button class="mm6" onclick="mM6.style.border='2px solid navy'; mL6.style.border='none';mXL6.style.border='none';mXXL6.style.border='none';minSize6 = 'M';mtemcode6 = '#'+ minfnode6 + minSize6;minCode6.innerText = mtemcode6 + desMINquanIN6.value;">M</button> 
+        <button class="ml6" onclick="mM6.style.border='none'; mL6.style.border='2px solid navy';mXL6.style.border='none';mXXL6.style.border='none';minSize6 = 'L';mtemcode6 = '#'+ minfnode6 + minSize6;minCode6.innerText = mtemcode6 + desMINquanIN6.value;">L</button> 
+        <button class="mxl6"onclick="mM6.style.border='none'; mL6.style.border='none';mXL6.style.border='2px solid navy';mXXL6.style.border='none';minSize6 = 'XL';mtemcode6 = '#'+ minfnode6 + minSize6;minCode6.innerText = mtemcode6 + desMINquanIN6.value;" >XL</button> 
+        <button class="mxxl6" onclick="mM6.style.border='none'; mL6.style.border='none';mXL6.style.border='none';mXXL6.style.border='2px solid navy';minSize6 = 'XXL';mtemcode6 = '#'+ minfnode6 + minSize6;minCode6.innerText = mtemcode6 + desMINquanIN6.value;">XXL</button> 
+      </div>
+      <div class="desminquan6"><b style="color: navy; font-size: 19px;">Quantity:</b> <input type="number" value="1" class="desminquanin6"  onclick="Msub6.style.display = 'block';"><button class="msub6" onclick="Msub6.style.display = 'none'; mtemcode6 ='#'+ minfnode6 + minSize6;minCode6.innerText = mtemcode6 + desMINquanIN6.value; Tpm6.textContent = eval( 399 * desMINquanIN6.value);">Submit</button></div>
+      <b style="color: navy; font-size: 21px;">Total:</b><b class='tpm6' style="color:red;font-size: 20px;"> 399 </b><b style="color: navy;"> BDT</b>
+     </div>
+    <button class="cp6cross" onclick="Cp6.style.display = 'none'; c=c-1; fff = 6;cartNote.innerText = c ;  crossminC(); ">x</button>
+    <div class="mincode6"></div>
+  </div>
+  <div class="cp5">
+    <div class="minshirtB5">
+    </div>
+    
+    <div class="minhand15"></div>
+    <div class="minhand25"></div>
+    <div class="minneck5"></div>
+    <div class="minshape15"></div>
+    <div class="minshape25"></div>
+    <div class="minimgBody5">
+      <img class="minimgC5" src="images/images (15) (5).jpeg" alt="">
+    </div>
+    <div class="cardes5">
+      <b style="color: navy; font-size: 21px;">Men's premium quality T-shirt</b>
+      <b style="color: navy;">Price: </b><b style="color:red;"> 399 </b><b style="color: navy;"> BDT</b> 
+      <div class="minsizesec5"><b style="color: navy; font-size: 19px;">Size:</b>
+        <button class="mm5" onclick="mM5.style.border='2px solid navy'; mL5.style.border='none';mXL5.style.border='none';mXXL5.style.border='none';minSize5 = 'M';mtemcode5 = '#'+ minfnode5 + minSize5;minCode5.innerText = mtemcode5 + desMINquanIN5.value;">M</button> 
+        <button class="ml5" onclick="mM5.style.border='none'; mL5.style.border='2px solid navy';mXL5.style.border='none';mXXL5.style.border='none';minSize5 = 'L';mtemcode5 = '#'+ minfnode5 + minSize5;minCode5.innerText = mtemcode5 + desMINquanIN5.value;">L</button> 
+        <button class="mxl5" onclick="mM5.style.border='none'; mL5.style.border='none';mXL5.style.border='2px solid navy';mXXL5.style.border='none';minSize5 = 'XL';mtemcode5 = '#'+ minfnode5 + minSize5;minCode5.innerText = mtemcode5 + desMINquanIN5.value;">XL</button> 
+        <button class="mxxl5" onclick="mM5.style.border='none'; mL5.style.border='none';mXL5.style.border='none';mXXL5.style.border='2px solid navy';minSize5 = 'XXL';mtemcode5 = '#'+ minfnode5 + minSize5;minCode5.innerText = mtemcode5 + desMINquanIN5.value;">XXL</button> 
+      </div>
+      <div class="desminquan5"><b style="color: navy; font-size: 19px;">Quantity:</b> <input type="number" value="1" class="desminquanin5"  onclick="Msub5.style.display = 'block';"><button class="msub5" onclick="Msub5.style.display = 'none'; mtemcode5 ='#'+ minfnode5 + minSize5;minCode5.innerText = mtemcode5 + desMINquanIN5.value; Tpm5.textContent = eval( 399 * desMINquanIN5.value);">Submit</button></div>
+      <b style="color: navy; font-size: 21px;">Total:</b><b class='tpm5' style="color:red;font-size: 20px;"> 399 </b><b style="color: navy;"> BDT</b>
+  
+      </b>
+     </div>
+    <button class="cp5cross" onclick="Cp5.style.display = 'none' ;c=c-1; eee = 5;cartNote.innerText = c ;  crossminC(); ">x</button>
+    <div class="mincode5"></div>
+  </div>
+
+  <div class="cp4">
+    <div class="minshirtB4">
+    </div>
+    
+    <div class="minhand14"></div>
+    <div class="minhand24"></div>
+    <div class="minneck4"></div>
+    <div class="minshape14"></div>
+    <div class="minshape24"></div>
+    <div class="minimgBody4">
+      <img class="minimgC4" src="images/images (15) (5).jpeg" alt="">
+    </div>
+    <div class="cardes4">
+      <b style="color: navy; font-size: 21px;">Men's premium quality T-shirt</b>
+      <b style="color: navy;">Price: </b><b style="color:red;"> 399 </b><b style="color: navy;"> BDT</b> 
+      <div class="minsizesec4"><b style="color: navy; font-size: 19px;">Size:</b>
+        <button class="mm4" onclick="mM4.style.border='2px solid navy'; mL4.style.border='none';mXL4.style.border='none';mXXL4.style.border='none';minSize4 = 'M';mtemcode4 = '#'+ minfnode4 + minSize4;minCode4.innerText = mtemcode4 + desMINquanIN4.value;">M</button> 
+        <button class="ml4" onclick="mM4.style.border='none'; mL4.style.border='2px solid navy';mXL4.style.border='none';mXXL4.style.border='none';minSize4 = 'L';mtemcode4 = '#'+ minfnode4 + minSize4;minCode4.innerText = mtemcode4 + desMINquanIN4.value;">L</button> 
+        <button class="mxl4" onclick="mM4.style.border='none'; mL4.style.border='none';mXL4.style.border='2px solid navy';mXXL4.style.border='none';minSize4 = 'XL';mtemcode4 = '#'+ minfnode4 + minSize4;minCode4.innerText = mtemcode4 + desMINquanIN4.value;">XL</button> 
+        <button class="mxxl4" onclick="mM4.style.border='none'; mL4.style.border='none';mXL4.style.border='none';mXXL4.style.border='2px solid navy';minSize4 = 'XXL';mtemcode4 = '#'+ minfnode4 + minSize4;minCode4.innerText = mtemcode4 + desMINquanIN4.value;">XXL</button> 
+      </div>
+      <div class="desminquan4"><b style="color: navy; font-size: 19px;">Quantity:</b> <input type="number" value="1" class="desminquanin4"  onclick="Msub4.style.display = 'block';"><button class="msub4" onclick="Msub4.style.display = 'none'; mtemcode4 ='#'+ minfnode4 + minSize4;minCode4.innerText = mtemcode4 + desMINquanIN4.value; Tpm4.textContent = eval( 399 * desMINquanIN4.value);">Submit</button></div>
+      <b style="color: navy; font-size: 21px;">Total:</b><b class='tpm4' style="color:red;font-size: 20px;"> 399 </b><b style="color: navy;"> BDT</b>
+  
+      </b>
+     </div>
+    <button class="cp4cross" onclick="Cp4.style.display = 'none'; c=c-1; ddd = 4;cartNote.innerText = c ;  crossminC(); ">x</button>
+    <div class="mincode4"></div>
+  </div>
+  
+<div class="cp3">
+  <div class="minshirtB3">
+  </div>
+  
+  <div class="minhand13"></div>
+  <div class="minhand23"></div>
+  <div class="minneck3"></div>
+  <div class="minshape13"></div>
+  <div class="minshape23"></div>
+  <div class="minimgBody3">
+    <img class="minimgC3" src="images/images (15) (5).jpeg" alt="">
+  </div>
+  <div class="cardes3">
+    <b style="color: navy; font-size: 21px;">Men's premium quality T-shirt</b>
+    <b style="color: navy;">Price: </b><b style="color:red;"> 399 </b><b style="color: navy;"> BDT</b> 
+    <div class="minsizesec3"><b style="color: navy; font-size: 19px;">Size:</b>
+      <button class="mm3"onclick="mM3.style.border='2px solid navy'; mL3.style.border='none';mXL3.style.border='none';mXXL3.style.border='none';minSize3 = 'M';mtemcode3 = '#'+ minfnode3 + minSize3;minCode3.innerText = mtemcode3 + desMINquanIN3.value;">M</button> 
+      <button class="ml3" onclick="mM3.style.border='none'; mL3.style.border='2px solid navy';mXL3.style.border='none';mXXL3.style.border='none';minSize3 = 'L';mtemcode3 = '#'+ minfnode3 + minSize3;minCode3.innerText = mtemcode3 + desMINquanIN3.value;">L</button> 
+      <button class="mxl3" onclick="mM3.style.border='none'; mL3.style.border='none';mXL3.style.border='2px solid navy';mXXL3.style.border='none';minSize3 = 'XL';mtemcode3 = '#'+ minfnode3 + minSize3;minCode3.innerText = mtemcode3 + desMINquanIN3.value;">XL</button> 
+      <button class="mxxl3" onclick="mM3.style.border='none'; mL3.style.border='none';mXL3.style.border='none';mXXL3.style.border='2px solid navy';minSize3  = 'XXL';mtemcode3 = '#'+ minfnode3 + minSize3;minCode3.innerText = mtemcode3 + desMINquanIN3.value;">XXL</button> 
+    </div>
+    <div class="desminquan3"><b style="color: navy; font-size: 19px;">Quantity:</b> <input type="number" value="1" class="desminquanin3"  onclick="Msub3.style.display = 'block';"><button class="msub3" onclick="Msub3.style.display = 'none'; mtemcode3 ='#'+ minfnode3 + minSize3;minCode3.innerText = mtemcode3 + desMINquanIN3.value; Tpm3.textContent = eval( 399 * desMINquanIN3.value);">Submit</button></div>
+    <b style="color: navy; font-size: 21px;">Total:</b><b class='tpm3' style="color:red;font-size: 20px;"> 399 </b><b style="color: navy;"> BDT</b>
+
+    </b>
+   </div>
+  <button class="cp3cross" onclick="Cp3.style.display = 'none'; c=c-1; ccc = 3;cartNote.innerText = c ;  crossminC(); ">x</button>
+  
+  <div class="mincode3"></div>
+</div>
+
+
+<div class="cp2">
+  <div class="minshirtB2">
+  </div>
+  
+  <div class="minhand12"></div>
+  <div class="minhand22"></div>
+  <div class="minneck2"></div>
+  <div class="minshape12"></div>
+  <div class="minshape22"></div>
+  <div class="minimgBody2">
+    <img class="minimgC2" src="images/images (15) (5).jpeg" alt="">
+  </div>
+  <div class="cardes2">
+    <b style="color: navy; font-size: 21px;">Men's premium quality T-shirt</b>
+    <b style="color: navy;">Price: </b><b style="color:red;"> 399 </b><b style="color: navy;"> BDT</b> 
+    <div class="minsizesec2"><b style="color: navy; font-size: 19px;">Size:</b>
+      <button class="mm2"onclick="mM2.style.border='2px solid navy'; mL2.style.border='none';mXL2.style.border='none';mXXL2.style.border='none';minSize2 = 'M';mtemcode2 = '#'+ minfnode2 + minSize2;minCode2.innerText = mtemcode2 + desMINquanIN2.value;">M</button> 
+      <button class="ml2" onclick="mM2.style.border='none'; mL2.style.border='2px solid navy';mXL2.style.border='none';mXXL2.style.border='none';minSize2 = 'L';mtemcode2 = '#'+ minfnode2 + minSize2;minCode2.innerText = mtemcode2 + desMINquanIN2.value;">L</button> 
+      <button class="mxl2" onclick="mM2.style.border='none'; mL2.style.border='none';mXL2.style.border='2px solid navy';mXXL2.style.border='none';minSize2 = 'XL';mtemcode2 = '#'+ minfnode2 + minSize2;minCode2.innerText = mtemcode2 + desMINquanIN2.value;">XL</button> 
+      <button class="mxxl2" onclick="mM2.style.border='none'; mL2.style.border='none';mXL2.style.border='none';mXXL2.style.border='2px solid navy';minSize2 = 'XXL';mtemcode2 = '#'+ minfnode2 + minSize2;minCode2.innerText = mtemcode2 + desMINquanIN2.value;">XXL</button> 
+    </div>
+    <div class="desminquan2"><b style="color: navy; font-size: 19px;">Quantity:</b> <input type="number" value="1" class="desminquanin2"  onclick="Msub2.style.display = 'block';"><button class="msub2"  onclick="Msub2.style.display = 'none'; mtemcode2 ='#'+ minfnode2 + minSize2;minCode2.innerText = mtemcode2 + desMINquanIN2.value;Tpm2.textContent = eval( 399 * desMINquanIN2.value);">Submit</button></div>
+    <b style="color: navy; font-size: 21px;">Total:</b><b class='tpm2' style="color:red;font-size: 20px;"> 399 </b><b style="color: navy;"> BDT</b>
+
+    </b>
+   </div>
+  <button class="cp2cross" onclick="Cp2.style.display = 'none'; c=c-1; bbb = 2;cartNote.innerText = c ;  crossminC(); ">x</button>
+  <div class="mincode2"></div>
+</div>
+
+<div class="cp1">
+ 
+  <div class="minshirtB">
+  </div>
+  
+  <div class="minhand1"></div>
+  <div class="minhand2"></div>
+  <div class="minneck"></div>
+  <div class="minshape1"></div>
+  <div class="minshape2"></div>
+  <div class="minimgBody">
+    <img class="minimgC" src="images/images (15) (5).jpeg" alt="">
+  </div>
+  
+  <div class="cardes1">
+    <b style="color: navy; font-size: 21px;">Men's premium quality T-shirt</b>
+    <b style="color: navy;">Price: </b><b style="color:red;"> 399 </b><b style="color: navy;"> BDT</b> 
+    <div class="minsizesec1"><b style="color: navy; font-size: 19px;">Size:</b>
+      <button class="mm1" onclick="mM1.style.border='2px solid navy'; mL1.style.border='none';mXL1.style.border='none';mXXL1.style.border='none'; minSize1 = 'M';mtemcode1 = '#'+ minfnode1 + minSize1;minCode1.innerText = mtemcode1 + desMINquanIN1.value;">M</button> 
+      <button class="ml1" onclick="mM1.style.border='none'; mL1.style.border='2px solid navy';mXL1.style.border='none';mXXL1.style.border='none';  minSize1 = 'L';mtemcode1 = '#'+ minfnode1 + minSize1;minCode1.innerText = mtemcode1 + desMINquanIN1.value;">L</button> 
+      <button class="mxl1"  onclick="mM1.style.border='none'; mL1.style.border='none';mXL1.style.border='2px solid navy';mXXL1.style.border='none';  minSize1 = 'XL';mtemcode1 = '#'+ minfnode1 + minSize1;minCode1.innerText = mtemcode1 + desMINquanIN1.value;  ">XL</button> 
+      <button class="mxxl1"  onclick="mM1.style.border='none'; mL1.style.border='none';mXL1.style.border='none';mXXL1.style.border='2px solid navy';  minSize1 = 'XXL';mtemcode1 = '#'+ minfnode1 + minSize1;minCode1.innerText = mtemcode1 + desMINquanIN1.value;  ">XXL</button> 
+    </div>
+    <div class="desminquan1"><b style="color: navy; font-size: 19px;">Quantity:</b> <input type="number" value="1" class="desminquanin1"  onclick="Msub1.style.display = 'block';"> <button class="msub1" onclick="Msub1.style.display = 'none'; mtemcode1 ='#'+ minfnode1 + minSize1;minCode1.innerText = mtemcode1 + desMINquanIN1.value; Tpm1.textContent = eval( 399 * desMINquanIN1.value);">Submit</button></div>
+    <b style="color: navy; font-size: 21px;">Total:</b><b class='tpm1' style="color:red;font-size: 20px;"> 399 </b><b style="color: navy;"> BDT</b>
+
+    </b>
+   </div>
+  <button class="cp1cross" onclick="Cp1.style.display = 'none'; c=c-1; aaa = 1;cartNote.innerText = c ;  crossminC();">x</button>
+  <div class="mincode1"></div>
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+<div class="buynowpopup">
+<div class="buynowcaption">
+  <b>Buy Now</b>
+  <button class="byncross" onclick="Buypopcross();">x</button>
+</div>
+<div class="yourps"><b>Your products :</b><div class="psall"></div></div>
+
+<div class="buynowquantity"><b>Quantity:</b> <b class="bynquanvalue" style="color: rgb(39, 184, 141);">10</b><b style="margin-left: 360px; font-weight: bold;font-size: 27px;">Pcs</b></div>
+<div class="buynowtotal"><b>Total:</b> <b class="byntotalvalue" style="color: rgb(0, 166, 255);">2589</b><b class="byntotcur">BDT </b></div>
+
+<div class="buynowdc"><b style="color: navy;font-weight: bold;font-size: 21px;">Delivery Charge:</b> <b class="byndcvalue" style="color: rgb(204, 0, 255);font-size: 28px;font-weight: bold; margin-left: 125px;">100</b> <b style="color: navy; margin-left: 30px; font-size: 27px;font-weight: bold;">BDT</b></div>
+<div class="buynownettotal"><b style="color: green;">NET Total:</b> <b class="bynnettotalvalue" style="color: red;font-size: 29px;margin-right: 20px;">2689</b><b style="margin-left: 270px;">BDT </b></div>
+
+<div class="bynnameinput"><b>Your Name:</b> <input class="bynnameinputvalue" type="text"> <button class="bynnamesubmit" onclick="Bynnumberinput.style.display = 'flex';">Next</button> </div>
+<div class="bynnumberinput"><b>Your Mobile Number:</b> <input class="bynnumberinputvalue" type="tel"> <button class="bynnumbersubmit" onclick="Bynnumberalinput.style.display = 'flex';">Next</button> </div>
+<div class="bynnumberalinput"><b>Your Another Mobile <br> Number(<b style="color: red;">Optional</b>):</b> <input class="bynnumberalinputvalue" type="tel" > <button class="bynnumberalsubmit" onclick="Bynemailinput.style.display = 'flex';">Next</button> </div>
+<div class="bynemailinput"><b>Your Email <br>Account:</b> <input class="bynemailinputvalue" type="email"> <button class="bynemailsubmit" onclick="Enteraddress.style.display='flex';">Next</button> </div>
+<div class="dass">
+
+  <div class="enteraddress"><b style="font-size: 32px;">Enter Your  Address :</b> <button class="enteraddressbtn"onclick="Division.style.display = 'flex';">Next</button></div>
+  <div class="division"><b>Division</b> <input class="divisioninput" type="text"> <button class="divisionsubmit" onclick="District.style.display = 'flex';">Next</button> </div>
+  <div class="district"><b>District</b> <input class="disrictinput" type="text"> <button class="districtsubmit" onclick="Upazilla.style.display = 'flex';">Next</button> </div>
+  <div class="upazilla"><b>Upazilla/Area</b> <input class="upazillainput" type="text"> <button class="upazillasubmit" onclick="Union.style.display = 'flex';">Next</button> </div>
+  <div class="union"><b>Union/Other </b> <input class="unioninput" type="text"> <button class="unionsubmit" onclick="Village.style.display = 'flex';">Next</button> </div>
+  <div class="village"><b>village/ Ward No. </b> <input class="villageinput" type="text"> <button class="villagesubmit" onclick="House.style.display = 'flex';">Next</button> </div>
+  <div class="house"><b>House No./
+  <br> Road No./Others</b> <input class="houseinput" type="text"> <button class="housesubmit" onclick="Pmd.style.display = 'block';">Next</button> </div>
+
+</div>
+<div class="pmd">
+
+<b>Paymet Method</b> <div class="bnrcod">
+  <div class="bkash" style="display: flex;margin-top: 20px;"><input class="bkashinput" style="width: 30px;height:30px ; margin-right: 20px;" type="checkbox" onclick="Bignext.style.display = 'block'; Bkashinput.checked = true; Nagadinput.checked = false; Rocketinput.checked = false; Cashondinput.checked = false; Pmdoncvalue= 'Bkash';"> <b>Bkash</b> </div>
+  <div class="nagad" style="display: flex;margin-top: 20px;"><input class="nagadinput" style="width: 30px;height:30px ; margin-right: 20px;" type="checkbox"  onclick="Bignext.style.display = 'block'; Bkashinput.checked =false ; Nagadinput.checked = true; Rocketinput.checked = false; Cashondinput.checked = false;Pmdoncvalue= 'Nagad';"><b>Nagad</b></div>
+  <div class="rocket" style="display: flex;margin-top: 20px;"><input class="rocketinput" style="width: 30px;height:30px ; margin-right: 20px;" type="checkbox" onclick="Bignext.style.display = 'block'; Bkashinput.checked = false; Nagadinput.checked = false; Rocketinput.checked = true; Cashondinput.checked = false;Pmdoncvalue= 'Rocket';"><b>Rocket</b></div>
+  <div class="cashond" style="display: flex;margin-top: 20px;"><input class="cashondinput" style="width: 30px;height:30px ;margin-right: 20px;" type="checkbox" onclick="Bignext.style.display = 'block'; Bkashinput.checked = false; Nagadinput.checked = false; Rocketinput.checked = false; Cashondinput.checked = true;Pmdoncvalue= 'Cash on Delivery';"><b>Cash On Delivery( <b style="color: red;"> you have to pay <br> the delivey charges before</b> )</b></div>
+</div>
+
+</div>
+
+
+
+<button class="fnext" onclick="Bynnameinput.style.display = 'flex';" >Next</button>
+<button class="bignext" onclick="BNext();">Next</button>
+</div>
+
+<div class="afterbnext">
+<div class="afterbnexttop">
+  <button class="afterbnextcross" onclick="BNextcross();">x</button>
+</div>
+<div class="afterbnexttext" style="text-align: center; margin-top: 30px; font-size: 21px;">
+  <p class="aftbnpsall" style="width:300px;word-break:break-all; margin-left: 230px;"> </p>
+  <p class="aftbnq" style="margin: 5px;" > </p>
+  <p class="aftbnt"style="margin: 5px;" > </p>
+  <p class="aftbndc"style="margin: 5px;" > </p>
+  <p class="aftbnnt"style="margin: 5px;" > </p>
+  <p class="aftbnname"style="margin: 5px;" > </p>
+  <p class="aftbnnumber" style="margin: 5px;"> </p>
+  <p class="aftbnalnumber" style="margin: 5px;"> </p>
+  <p class="aftbnemail" style="margin: 5px;"> </p>
+
+  <p class="aftbnaddress" > </p>
+  <p class="aftbnpmd" > </p>
+  
+
+</div>
+
+<b style="position: absolute; margin-top: 50px; color: green;font-size: 26px; margin-left: 150px;"  >Press the <b style="color: red;">Copy</b> Button and <b style="color: blue;">Inbox</b> Us</b>
+<input type="text" class="aftbninputforcopy" style="margin-top: 100px;position: absolute;display:none;">
+<div class="aftbncibtn">
+  <Button class="aftbncopybtn" style="background-color: rgb(255, 35, 35);" onclick=" Aftbncopy();" >Copy</Button>
+  <a class="aftbninboxbtnlink" href="https://l.facebook.com/l.php?u=https%3A%2F%2Fm.me%2Fmdbulbul.ahmed.756859%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR3lp-6txGhMTJM8bBOx-C_3PFLJkVojC18qVi9_TVBJ-hsJ9hxVR9O23rw_aem_Z0tqT61fT_S6nZsS7EpF7w&h=AT1YoOW7P50U3hFm2hOOxwAOCxDlv15NX-dW4grrzJar61ogtDXlGMBh19L3TqIwM0EltTLmNOZ9TF6kUTqvHaFVQdulud8m8_Jsp_LwWDz7pTAiqyf61NILsd3lHzQRru_5kg"><Button class="aftbninboxbtn" style="background-color:blue;" >Inbox</Button></a>
+</div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+  <script >
+    const All = document.querySelector('.all');
+let SB = document.querySelector(".shirtB");
+let H1 = document.querySelector('.hand1');
+let H2 = document.querySelector('.hand2');
+let S1 = document.querySelector('.shape1');
+let S2 = document.querySelector('.shape2');
+let Nck = document.querySelector(".neck");
+
+let quantinp = document.querySelector('.quaninp');
+
+let M = document.querySelector('.m');
+let L = document.querySelector('.l');
+let XL = document.querySelector('.xl');
+let XXL = document.querySelector('.xxl');
+
+let SubmitQ = document.querySelector('.submitq');
+ 
+SubmitQ.style.display = 'none';
+
+
+
+
+
+
+let ImgC = document.querySelector('.imgC');
+
+const Code = document.querySelector('.cotext');
+M.style.border = '2px solid navy'
+
+let colorCode = "BL";
+let desCode = '19';
+let sizecode = 'M';
+let qntcode = quantinp.value;
+
+
+
+
+
+Code.innerText = "#" + colorCode + desCode + sizecode + qntcode;
+
+const searchBar = document.querySelector('#search-bar');
+
+
+
+function ReD(){
+  SB.style.backgroundColor = 'red'
+  SB.style.backgroundColor = 'red'
+  S1.style.backgroundColor = 'red'
+  S2.style.backgroundColor = 'red'
+  H1.style.backgroundColor = 'red'
+  H2.style.backgroundColor = 'red'
+  
+  colorCode ='RD';
+  Code.innerText = "#" + colorCode + desCode+ sizecode + qntcode;
+  copyText.value = Code.innerText;
+  
+
+}
+function GrN(){
+  SB.style.backgroundColor = 'green'
+  SB.style.backgroundColor = 'green'
+  S1.style.backgroundColor = 'green'
+  S2.style.backgroundColor = 'green'
+  H1.style.backgroundColor = 'green'
+  H2.style.backgroundColor = 'green'
+  colorCode = 'GR'
+  Code.innerText = "#" + colorCode + desCode+ sizecode + qntcode;
+  copyText.value = Code.innerText;
+  
+
+
+}
+function BlU(){
+  SB.style.backgroundColor = 'navy'
+  SB.style.backgroundColor = 'navy'
+  S1.style.backgroundColor = 'navy'
+  S2.style.backgroundColor = 'navy'
+  H1.style.backgroundColor = 'navy'
+  H2.style.backgroundColor = 'navy'
+  colorCode = 'NV'
+  Code.innerText = "#" + colorCode + desCode+ sizecode + qntcode;
+  copyText.value = Code.innerText;
+
+
+
+}
+function WT(){
+  SB.style.backgroundColor = 'white'
+  SB.style.backgroundColor = 'white'
+  S1.style.backgroundColor = 'white'
+  S2.style.backgroundColor = 'white'
+  H1.style.backgroundColor = 'white'
+  H2.style.backgroundColor = 'white'
+  colorCode = 'WT'
+  Code.innerText = "#" + colorCode + desCode+ sizecode + qntcode;
+  copyText.value = Code.innerText;
+ 
+  
+}
+
+function bLk(){
+  SB.style.backgroundColor = 'black'
+  SB.style.backgroundColor = 'black'
+  S1.style.backgroundColor = 'black'
+  S2.style.backgroundColor = 'black'
+  H1.style.backgroundColor = 'black'
+  H2.style.backgroundColor = 'black'
+  colorCode = 'BL'
+  Code.innerText = "#" + colorCode + desCode+ sizecode + qntcode;
+  copyText.value = Code.innerText;
+  
+  
+}
+function bRn(){
+  SB.style.backgroundColor = 'brown'
+  SB.style.backgroundColor = 'brown'
+  S1.style.backgroundColor = 'brown'
+  S2.style.backgroundColor = 'brown'
+  H1.style.backgroundColor = 'brown'
+  H2.style.backgroundColor = 'brown'
+  colorCode = 'BN'
+  Code.innerText = "#" + colorCode + desCode+ sizecode + qntcode;
+  copyText.value = Code.innerText;
+  
+
+}
+function gRy(){
+  SB.style.backgroundColor = 'gray'
+  SB.style.backgroundColor = 'gray'
+  S1.style.backgroundColor = 'gray'
+  S2.style.backgroundColor = 'gray'
+  H1.style.backgroundColor = 'gray'
+  H2.style.backgroundColor = 'gray'
+  colorCode = 'GY'
+  Code.innerText = "#" + colorCode + desCode+ sizecode + qntcode;
+  copyText.value = Code.innerText;
+
+  
+}
+const copyText = document.getElementById ('inputcode');
+copyText.value = Code.innerText;
+function copy(){
+
+ copyText.select();
+ copyText.setSelectionRange(0,99999);
+ navigator.clipboard.writeText(copyText.value) ;
+
+}
+
+const desBar = document.querySelector('.desbar');
+let n = 0;
+
+function Description(){
+ n = n+1;
+ if(n%2 !== 0){
+  desBar.style.display = 'block'
+ }
+  else{
+desBar.style.display = 'none'
+  }
+
+}
+// const desBtn = document.querySelector('.descross');
+
+let showCart = document.querySelector('.showcart');
+let m=0;
+function SCart(){
+  m = m+1;
+if(m%2 !== 0){
+  showCart.style.display = 'block';
+}
+else{
+  showCart.style.display = 'none';
+}
+
+  
+}
+
+const cartNote = document.querySelector('#cartnote');
+let CarNot = document.querySelector('.carnot');
+
+let c = 0;
+let kkk = 0;
+let aaa = 0;
+let bbb = 0;
+let ccc = 0;
+let ddd = 0;
+let eee = 0;
+let fff = 0;
+let ggg = 0;
+let hhh = 0 ;
+let iii = 0;
+let jjj = 0 ;
+
+
+
+
+function CartNote(){
+
+  console.log(kkk)
+
+if(c<=9 && c>=0){
+  c =c+1 ;
+ 
+CarNot.style.display = "none";
+}
+else{
+ CarNot.style.display = "block";
+
+
+}
+cartNote.innerText = c ;
+}
+
+function crossminC(){
+  
+if(c<=9 && c>=0){
+  
+CarNot.style.display = "none";
+}
+else{
+ CarNot.style.display = "block";
+
+
+}
+}
+
+
+//swapped the let with const for mImc and after!//
+
+const Cp1 = document.querySelector('.cp1');
+const Cp2 = document.querySelector('.cp2');
+const Cp3= document.querySelector('.cp3');
+const Cp4 = document.querySelector('.cp4');
+const Cp5 = document.querySelector('.cp5');
+const Cp6 = document.querySelector('.cp6');
+const Cp7 = document.querySelector('.cp7');
+const Cp8 = document.querySelector('.cp8');
+const Cp9 = document.querySelector('.cp9');
+const Cp10 = document.querySelector('.cp10');
+
+const mSB = document.querySelector(".minshirtB");
+const mH1 = document.querySelector('.minhand1');
+const mH2 = document.querySelector('.minhand2');
+const mS1 = document.querySelector('.minshape1');
+const mS2 = document.querySelector('.minshape2');
+const mNck = document.querySelector(".minneck");
+const mImgC = document.querySelector('.minimgC');
+
+const mSB2 = document.querySelector(".minshirtB2");
+const mH12 = document.querySelector('.minhand12');
+const mH22 = document.querySelector('.minhand22');
+const mS12 = document.querySelector('.minshape12');
+const mS22 = document.querySelector('.minshape22');
+const mNck2 = document.querySelector(".minneck2");
+const mImgC2 = document.querySelector('.minimgC2');
+
+const mSB3 = document.querySelector(".minshirtB3");
+const mH13 = document.querySelector('.minhand13');
+const mH23 = document.querySelector('.minhand23');
+const mS13 = document.querySelector('.minshape13');
+const mS23 = document.querySelector('.minshape23');
+const mNck3 = document.querySelector(".minneck3");
+const mImgC3 = document.querySelector('.minimgC3');
+
+const mSB4 = document.querySelector(".minshirtB4");
+const mH14 = document.querySelector('.minhand14');
+const mH24 = document.querySelector('.minhand24');
+const mS14 = document.querySelector('.minshape14');
+const mS24 = document.querySelector('.minshape24');
+const mNck4 = document.querySelector(".minneck4");
+const mImgC4 = document.querySelector('.minimgC4');
+
+const mSB5 = document.querySelector(".minshirtB5");
+const mH15 = document.querySelector('.minhand15');
+const mH25 = document.querySelector('.minhand25');
+const mS15 = document.querySelector('.minshape15');
+const mS25 = document.querySelector('.minshape25');
+const mNck5 = document.querySelector(".minneck5");
+const mImgC5 = document.querySelector('.minimgC5');
+
+const mSB6 = document.querySelector(".minshirtB6");
+const mH16 = document.querySelector('.minhand16');
+const mH26 = document.querySelector('.minhand26');
+const mS16 = document.querySelector('.minshape16');
+const mS26 = document.querySelector('.minshape26');
+const mNck6 = document.querySelector(".minneck6");
+const mImgC6 = document.querySelector('.minimgC6');
+
+const mSB7 = document.querySelector(".minshirtB7");
+const mH17 = document.querySelector('.minhand17');
+const mH27 = document.querySelector('.minhand27');
+const mS17 = document.querySelector('.minshape17');
+const mS27 = document.querySelector('.minshape27');
+const mNck7 = document.querySelector(".minneck7");
+const mImgC7= document.querySelector('.minimgC7');
+
+const mSB8 = document.querySelector(".minshirtB8");
+const mH18 = document.querySelector('.minhand18');
+const mH28= document.querySelector('.minhand28');
+const mS18 = document.querySelector('.minshape18');
+const mS28 = document.querySelector('.minshape28');
+const mNck8 = document.querySelector(".minneck8");
+const mImgC8 = document.querySelector('.minimgC8');
+
+const mSB9 = document.querySelector(".minshirtB9");
+const mH19 = document.querySelector('.minhand19');
+const mH29 = document.querySelector('.minhand29');
+const mS19 = document.querySelector('.minshape19');
+const mS29 = document.querySelector('.minshape29');
+const mNck9 = document.querySelector(".minneck9");
+const mImgC9 = document.querySelector('.minimgC9');
+
+const mSB0 = document.querySelector(".minshirtB0");
+const mH10 = document.querySelector('.minhand10');
+const mH20 = document.querySelector('.minhand20');
+const mS10 = document.querySelector('.minshape10');
+const mS20 = document.querySelector('.minshape20');
+const mNck0 = document.querySelector(".minneck0");
+const mImgC0 = document.querySelector('.minimgC0');
+
+
+const Cp1crs = document.querySelector('.cp1cross');
+const Cp2crs = document.querySelector('.cp2cross');
+const Cp3crs = document.querySelector('.cp3cross');
+const Cp4crs = document.querySelector('.cp4cross');
+const Cp5crs = document.querySelector('.cp5cross');
+const Cp6crs = document.querySelector('.cp6cross');
+const Cp7crs = document.querySelector('.cp7cross');
+const Cp8crs = document.querySelector('.cp8cross');
+const Cp9crs = document.querySelector('.cp9cross');
+const Cp10crs = document.querySelector('.cp10cross');
+
+const mM1 = document.querySelector('.mm1');
+const mL1 = document.querySelector('.ml1');
+const mXL1 = document.querySelector('.mxl1');
+const mXXL1 = document.querySelector('.mxxl1');
+
+const mM2 = document.querySelector('.mm2');
+const mL2 = document.querySelector('.ml2');
+const mXL2 = document.querySelector('.mxl2');
+const mXXL2 = document.querySelector('.mxxl2');
+
+const mM3 = document.querySelector('.mm3');
+const mL3 = document.querySelector('.ml3');
+const mXL3 = document.querySelector('.mxl3');
+const mXXL3 = document.querySelector('.mxxl3');
+
+const mM4 = document.querySelector('.mm4');
+const mL4 = document.querySelector('.ml4');
+const mXL4 = document.querySelector('.mxl4');
+const mXXL4 = document.querySelector('.mxxl4');
+
+const mM5 = document.querySelector('.mm5');
+const mL5 = document.querySelector('.ml5');
+const mXL5 = document.querySelector('.mxl5');
+const mXXL5 = document.querySelector('.mxxl5');
+
+const mM6 = document.querySelector('.mm6');
+const mL6 = document.querySelector('.ml6');
+const mXL6 = document.querySelector('.mxl6');
+const mXXL6 = document.querySelector('.mxxl6');
+
+const mM7 = document.querySelector('.mm7');
+const mL7 = document.querySelector('.ml7');
+const mXL7 = document.querySelector('.mxl7');
+const mXXL7 = document.querySelector('.mxxl7');
+
+const mM8 = document.querySelector('.mm8');
+const mL8 = document.querySelector('.ml8');
+const mXL8 = document.querySelector('.mxl8');
+const mXXL8 = document.querySelector('.mxxl8');
+
+const mM9 = document.querySelector('.mm9');
+const mL9 = document.querySelector('.ml9');
+const mXL9 = document.querySelector('.mxl9');
+const mXXL9 = document.querySelector('.mxxl9');
+
+const mM10 = document.querySelector('.mm10');
+const mL10 = document.querySelector('.ml10');
+const mXL10 = document.querySelector('.mxl10');
+const mXXL10 = document.querySelector('.mxxl10');
+
+
+let minSize1 ;
+let minSize2 ;
+let minSize3 ;
+let minSize4 ;
+let minSize5 ;
+let minSize6 ;
+let minSize7 ;
+let minSize8 ;
+let minSize9 ;
+let minSize10 ;
+
+let minfnode1;
+let minfnode2;
+let minfnode3;
+let minfnode4;
+let minfnode5;
+let minfnode6;
+let minfnode7;
+let minfnode8;
+let minfnode9;
+let minfnode10;
+
+let mtemcode1;
+let mtemcode2;
+let mtemcode3;
+let mtemcode4;
+let mtemcode5;
+let mtemcode6;
+let mtemcode7;
+let mtemcode8;
+let mtemcode9;
+let mtemcode10;
+
+let temdesmqin1;
+let temdesmqin2;
+let temdesmqin3;
+let temdesmqin4;
+let temdesmqin5;
+let temdesmqin6;
+let temdesmqin7;
+let temdesmqin8;
+let temdesmqin9;
+let temdesmqin10;
+
+
+const desMINquanIN1 = document.querySelector('.desminquanin1');
+const desMINquanIN2 = document.querySelector('.desminquanin2');
+const desMINquanIN3 = document.querySelector('.desminquanin3');
+const desMINquanIN4 = document.querySelector('.desminquanin4');
+const desMINquanIN5 = document.querySelector('.desminquanin5');
+const desMINquanIN6 = document.querySelector('.desminquanin6');
+const desMINquanIN7 = document.querySelector('.desminquanin7');
+const desMINquanIN8 = document.querySelector('.desminquanin8');
+const desMINquanIN9 = document.querySelector('.desminquanin9');
+const desMINquanIN10 = document.querySelector('.desminquanin10');
+
+const Msub1 = document.querySelector('.msub1');
+const Msub2 = document.querySelector('.msub2');
+const Msub3 = document.querySelector('.msub3');
+const Msub4 = document.querySelector('.msub4');
+const Msub5 = document.querySelector('.msub5');
+const Msub6 = document.querySelector('.msub6');
+const Msub7 = document.querySelector('.msub7');
+const Msub8 = document.querySelector('.msub8');
+const Msub9 = document.querySelector('.msub9');
+const Msub10 = document.querySelector('.msub10');
+
+const Tpm1 = document.querySelector('.tpm1');
+const Tpm2 = document.querySelector('.tpm2');
+const Tpm3 = document.querySelector('.tpm3');
+const Tpm4 = document.querySelector('.tpm4');
+const Tpm5 = document.querySelector('.tpm5');
+const Tpm6 = document.querySelector('.tpm6');
+const Tpm7 = document.querySelector('.tpm7');
+const Tpm8 = document.querySelector('.tpm8');
+const Tpm9 = document.querySelector('.tpm9');
+const Tpm10 = document.querySelector('.tpm10');
+
+
+const minCode1 = document.querySelector('.mincode1');
+const minCode2 = document.querySelector('.mincode2');
+const minCode3 = document.querySelector('.mincode3');
+const minCode4 = document.querySelector('.mincode4');
+const minCode5 = document.querySelector('.mincode5');
+const minCode6 = document.querySelector('.mincode6');
+const minCode7 = document.querySelector('.mincode7');
+const minCode8 = document.querySelector('.mincode8');
+const minCode9 = document.querySelector('.mincode9');
+const minCode10 = document.querySelector('.mincode10');
+
+
+
+
+function atC(){
+  
+  if(kkk==1 || aaa == 1){
+    Cp1.style.display = 'block';
+    aaa = 0 ;
+
+    mSB.style.backgroundColor = SB.style.backgroundColor;
+    mS1.style.backgroundColor = SB.style.backgroundColor;
+    mS2.style.backgroundColor = SB.style.backgroundColor;
+    mH1.style.backgroundColor = SB.style.backgroundColor;
+    mH2.style.backgroundColor = SB.style.backgroundColor;
+    mImgC.src =  ImgC.src
+    desMINquanIN1.value = quantinp.value;
+
+    Tpm1.textContent = eval( 399 * desMINquanIN1.value);
+
+
+if(sizecode === 'M'){
+  mM1.style.border = "2px solid navy";
+  mL1.style.border = "none";
+  mXL1.style.border = "none";
+  mXXL1.style.border = "none";
+  minSize1 = 'M';
+}
+else if(sizecode === 'L'){
+  mM1.style.border = "none";
+  mL1.style.border = "2px solid navy";
+  mXL1.style.border = "none";
+  mXXL1.style.border = "none";
+  minSize1 = 'L';
+}
+else if(sizecode === 'XL'){
+  mM1.style.border = "none";
+  mL1.style.border = "none";
+  mXL1.style.border = "2px solid navy";
+  mXXL1.style.border = "none";
+  minSize1 = 'XL';
+}
+else if(sizecode === 'XXL'){
+  mM1.style.border = "none";
+  mL1.style.border = "none";
+  mXL1.style.border = "none";
+  mXXL1.style.border = "2px solid navy";
+  minSize1 = 'XL';
+}
+minfnode1 = colorCode + desCode;
+mtemcode1 = '#'+ minfnode1 + minSize1;
+minCode1.innerText = mtemcode1 + desMINquanIN1.value;
+
+}
+
+
+else if(kkk==2 || bbb == 2){
+  Cp2.style.display = 'block';
+  bbb = 0 ;
+ 
+  mSB2.style.backgroundColor = SB.style.backgroundColor;
+  mS12.style.backgroundColor = SB.style.backgroundColor;
+  mS22.style.backgroundColor = SB.style.backgroundColor;
+  mH12.style.backgroundColor = SB.style.backgroundColor;
+  mH22.style.backgroundColor = SB.style.backgroundColor;
+  mImgC2.src =  ImgC.src;
+  desMINquanIN2.value = quantinp.value;
+
+  Tpm2.textContent = eval( 399 * desMINquanIN2.value);
+
+  
+if(sizecode === 'M'){
+  mM2.style.border = "2px solid navy";
+  mL2.style.border = "none";
+  mXL2.style.border = "none";
+  mXXL2.style.border = "none";
+  minSize2 = 'M';
+}
+else if(sizecode === 'L'){
+  mM2.style.border = "none";
+  mL2.style.border = "2px solid navy";
+  mXL2.style.border = "none";
+  mXXL2.style.border = "none";
+  minSize2 = 'L';
+}
+else if(sizecode === 'XL'){
+  mM2.style.border = "none";
+  mL2.style.border = "none";
+  mXL2.style.border = "2px solid navy";
+  mXXL2.style.border = "none";
+  minSize2 = 'XL';
+}
+else if(sizecode === 'XXL'){
+  mM2.style.border = "none";
+  mL2.style.border = "none";
+  mXL2.style.border = "none";
+  mXXL2.style.border = "2px solid navy";
+  minSize2 = 'XXL';
+}
+minfnode2 = colorCode + desCode;
+minCode2.innerText = '#'+ minfnode2 + minSize2 + desMINquanIN2.value;
+}
+else if(kkk==3 || ccc ==3){
+  Cp3.style.display = 'block';
+  ccc = 0 ;
+ 
+  mSB3.style.backgroundColor = SB.style.backgroundColor;
+  mS13.style.backgroundColor = SB.style.backgroundColor;
+  mS23.style.backgroundColor = SB.style.backgroundColor;
+  mH13.style.backgroundColor = SB.style.backgroundColor;
+  mH23.style.backgroundColor = SB.style.backgroundColor;
+  mImgC3.src =  ImgC.src;
+
+  desMINquanIN3.value = quantinp.value;
+
+  Tpm3.textContent = eval( 399 * desMINquanIN3.value);
+
+
+  
+if(sizecode === 'M'){
+  mM3.style.border = "2px solid navy";
+  mL3.style.border = "none";
+  mXL3.style.border = "none";
+  mXXL3.style.border = "none";
+  minSize3 = 'M';
+}
+else if(sizecode === 'L'){
+  mM3.style.border = "none";
+  mL3.style.border = "2px solid navy";
+  mXL3.style.border = "none";
+  mXXL3.style.border = "none";
+  minSize3 = 'L';
+}
+else if(sizecode === 'XL'){
+  mM3.style.border = "none";
+  mL3.style.border = "none";
+  mXL3.style.border = "2px solid navy";
+  mXXL3.style.border = "none";
+  minSize3 = 'XL';
+}
+else if(sizecode === 'XXL'){
+  mM3.style.border = "none";
+  mL3.style.border = "none";
+  mXL3.style.border = "none";
+  mXXL3.style.border = "2px solid navy";
+  minSize3 = 'XXL';
+}
+minfnode3 = colorCode + desCode;
+minCode3.innerText = '#'+ minfnode3 + minSize3 +desMINquanIN3.value;
+}
+  
+else if(kkk==4 || ddd == 4){
+  Cp4.style.display = 'block';
+  ddd = 0;
+
+  mSB4.style.backgroundColor = SB.style.backgroundColor;
+  mS14.style.backgroundColor = SB.style.backgroundColor;
+  mS24.style.backgroundColor = SB.style.backgroundColor;
+  mH14.style.backgroundColor = SB.style.backgroundColor;
+  mH24.style.backgroundColor = SB.style.backgroundColor;
+  mImgC4.src =  ImgC.src;
+
+
+  desMINquanIN4.value = quantinp.value;
+  Tpm4.textContent = eval( 399 * desMINquanIN4.value);
+
+  
+if(sizecode === 'M'){
+  mM4.style.border = "1px solid navy";
+  mL4.style.border = "none";
+  mXL4.style.border = "none";
+  mXXL4.style.border = "none";
+  minSize4 = 'M';
+}
+else if(sizecode === 'L'){
+  mM4.style.border = "none";
+  mL4.style.border = "2px solid navy";
+  mXL4.style.border = "none";
+  mXXL4.style.border = "none";
+  minSize4 = 'L';
+}
+else if(sizecode === 'XL'){
+  mM4.style.border = "none";
+  mL4.style.border = "none";
+  mXL4.style.border = "2px solid navy";
+  mXXL4.style.border = "none";
+  minSize4 = 'XL';
+}
+else if(sizecode === 'XXL'){
+  mM4.style.border = "none";
+  mL4.style.border = "none";
+  mXL4.style.border = "none";
+  mXXL4.style.border = "2px solid navy";
+  minSize4 = 'XXL';
+}
+minfnode4 = colorCode + desCode;
+minCode4.innerText = '#'+ minfnode4 + minSize4  +desMINquanIN4.value;
+  
+}
+else if(kkk == 5 || eee == 5){
+  Cp5.style.display = 'block';
+  eee = 0;
+
+ 
+  mSB5.style.backgroundColor = SB.style.backgroundColor;
+  mS15.style.backgroundColor = SB.style.backgroundColor;
+  mS25.style.backgroundColor = SB.style.backgroundColor;
+  mH15.style.backgroundColor = SB.style.backgroundColor;
+  mH25.style.backgroundColor = SB.style.backgroundColor;
+  mImgC5.src =  ImgC.src;
+
+  desMINquanIN5.value = quantinp.value;
+  Tpm5.textContent = eval( 399 * desMINquanIN5.value);
+
+
+  
+if(sizecode === 'M'){
+  mM5.style.border = "2px solid navy";
+  mL5.style.border = "none";
+  mXL5.style.border = "none";
+  mXXL5.style.border = "none";
+  minSize5 = 'M';
+}
+else if(sizecode === 'L'){
+  mM5.style.border = "none";
+  mL5.style.border = "2px solid navy";
+  mXL5.style.border = "none";
+  mXXL5.style.border = "none";
+  minSize5 = 'L';
+}
+else if(sizecode === 'XL'){
+  mM5.style.border = "none";
+  mL5.style.border = "none";
+  mXL5.style.border = "2px solid navy";
+  mXXL5.style.border = "none";
+  minSize5 = 'XL';
+}
+else if(sizecode === 'XXL'){
+  mM5.style.border = "none";
+  mL5.style.border = "none";
+  mXL5.style.border = "none";
+  mXXL5.style.border = "2px solid navy";
+  minSize5 = 'XXL';
+}
+minfnode5 = colorCode + desCode;
+minCode5.innerText = '#'+ minfnode5 + minSize5  +desMINquanIN5.value;
+}
+else if(kkk == 6 || fff == 6){
+   Cp6.style.display = 'block';
+  
+   
+   mSB6.style.backgroundColor = SB.style.backgroundColor;
+   mS16.style.backgroundColor = SB.style.backgroundColor;
+   mS26.style.backgroundColor = SB.style.backgroundColor;
+   mH16.style.backgroundColor = SB.style.backgroundColor;
+   mH26.style.backgroundColor = SB.style.backgroundColor;
+   mImgC6.src =  ImgC.src;
+
+   desMINquanIN6.value = quantinp.value;
+   Tpm6.textContent = eval( 399 * desMINquanIN6.value);
+   fff = 0 ;
+
+
+
+   
+if(sizecode === 'M'){
+  mM6.style.border = "2px solid navy";
+  mL6.style.border = "none";
+  mXL6.style.border = "none";
+  mXXL6.style.border = "none";
+  minSize6 = 'M';
+}
+else if(sizecode === 'L'){
+  mM6.style.border = "none";
+  mL6.style.border = "2px solid navy";
+  mXL6.style.border = "none";
+  mXXL6.style.border = "none";
+  minSize6 = 'L';
+}
+else if(sizecode === 'XL'){
+  mM6.style.border = "none";
+  mL6.style.border = "none";
+  mXL6.style.border = "2px solid navy";
+  mXXL6.style.border = "none";
+  minSize6 = 'XL';
+}
+else if(sizecode === 'XXL'){
+  mM6.style.border = "none";
+  mL6.style.border = "none";
+  mXL6.style.border = "none";
+  mXXL6.style.border = "2px solid navy";
+  minSize6 = 'XXL';
+}
+minfnode6 = colorCode + desCode;
+minCode6.innerText = '#'+ minfnode6 + minSize6  +desMINquanIN6.value;
+}
+else if(kkk == 7 || ggg == 7){
+   Cp7.style.display = 'block';
+   ggg = 0;
+
+   mSB7.style.backgroundColor = SB.style.backgroundColor;
+   mS17.style.backgroundColor = SB.style.backgroundColor;
+   mS27.style.backgroundColor = SB.style.backgroundColor;
+   mH17.style.backgroundColor = SB.style.backgroundColor;
+   mH27.style.backgroundColor = SB.style.backgroundColor;
+   mImgC7.src =  ImgC.src;
+
+
+   desMINquanIN7.value = quantinp.value;
+   Tpm7.textContent = eval( 399 * desMINquanIN7.value);
+
+
+
+   
+if(sizecode === 'M'){
+  mM7.style.border = "2px solid navy";
+  mL7.style.border = "none";
+  mXL7.style.border = "none";
+  mXXL7.style.border = "none";
+  minSize7 = 'M';
+}
+else if(sizecode === 'L'){
+  mM7.style.border = "none";
+  mL7.style.border = "2px solid navy";
+  mXL7.style.border = "none";
+  mXXL7.style.border = "none";
+  minSize7 = 'L';
+}
+else if(sizecode === 'XL'){
+  mM7.style.border = "none";
+  mL7.style.border = "none";
+  mXL7.style.border = "2px solid navy";
+  mXXL7.style.border = "none";
+  minSize7 = 'XL';
+}
+else if(sizecode === 'XXL'){
+  mM7.style.border = "none";
+  mL7.style.border = "none";
+  mXL7.style.border = "none";
+  mXXL7.style.border = "2px solid navy";
+  minSize7 = 'XXL';
+}
+minfnode7 = colorCode + desCode;
+minCode7.innerText = '#'+ minfnode7 + minSize7  +desMINquanIN7.value;
+}
+else if(kkk == 8 || hhh == 8){
+  Cp8.style.display = 'block';
+  hhh= 0 ;
+
+   mSB8.style.backgroundColor = SB.style.backgroundColor;
+   mS18.style.backgroundColor = SB.style.backgroundColor;
+   mS28.style.backgroundColor = SB.style.backgroundColor;
+   mH18.style.backgroundColor = SB.style.backgroundColor;
+   mH28.style.backgroundColor = SB.style.backgroundColor;
+   mImgC8.src =  ImgC.src;
+
+
+   desMINquanIN8.value = quantinp.value;
+   Tpm8.textContent = eval( 399 * desMINquanIN8.value);
+
+
+
+   
+if(sizecode === 'M'){
+  mM8.style.border = "2px solid navy";
+  mL8.style.border = "none";
+  mXL8.style.border = "none";
+  mXXL8.style.border = "none";
+  minSize8 = 'M';
+}
+else if(sizecode === 'L'){
+  mM8.style.border = "none";
+  mL8.style.border = "2px solid navy";
+  mXL8.style.border = "none";
+  mXXL8.style.border = "none";
+  minSize8 = 'L';
+}
+else if(sizecode === 'XL'){
+  mM8.style.border = "none";
+  mL8.style.border = "none";
+  mXL8.style.border = "2px solid navy";
+  mXXL8.style.border = "none";
+  minSize8 = 'XL';
+}
+else if(sizecode === 'XXL'){
+  mM8.style.border = "none";
+  mL8.style.border = "none";
+  mXL8.style.border = "none";
+  mXXL8.style.border = "2px solid navy";
+  minSize8 = 'XXL';
+}
+minfnode8 = colorCode + desCode;
+minCode8.innerText = '#'+ minfnode8 + minSize8  +desMINquanIN8.value;
+}
+else if(kkk==9 || iii == 9){
+   Cp9.style.display = 'block';
+   iii = 0 ;
+ 
+   mSB9.style.backgroundColor = SB.style.backgroundColor;
+   mS19.style.backgroundColor = SB.style.backgroundColor;
+   mS29.style.backgroundColor = SB.style.backgroundColor;
+   mH19.style.backgroundColor = SB.style.backgroundColor;
+   mH29.style.backgroundColor = SB.style.backgroundColor;
+   mImgC9.src =  ImgC.src;
+
+
+   desMINquanIN9.value = quantinp.value;
+   Tpm9.textContent = eval( 399 * desMINquanIN9.value);
+
+
+
+   
+if(sizecode === 'M'){
+  mM9.style.border = "2px solid navy";
+  mL9.style.border = "none";
+  mXL9.style.border = "none";
+  mXXL9.style.border = "none";
+  minSize9 = 'M';
+}
+else if(sizecode === 'L'){
+  mM9.style.border = "none";
+  mL9.style.border = "2px solid navy";
+  mXL9.style.border = "none";
+  mXXL9.style.border = "none";
+  minSize9 = 'L';
+}
+else if(sizecode === 'XL'){
+  mM9.style.border = "none";
+  mL9.style.border = "none";
+  mXL9.style.border = "2px solid navy";
+  mXXL9.style.border = "none";
+  minSize9 = 'XL';
+}
+else if(sizecode === 'XXL'){
+  mM9.style.border = "none";
+  mL9.style.border = "none";
+  mXL9.style.border = "none";
+  mXXL9.style.border = "2px solid navy";
+  minSize9 = 'XXL';
+}
+minfnode9 = colorCode + desCode;
+minCode9.innerText = '#'+ minfnode9 + minSize9  +desMINquanIN9.value;
+}
+
+if(kkk==10 || jjj == 10){
+   Cp10.style.display = 'block';
+   jjj = 0 ;
+  
+   mSB0.style.backgroundColor = SB.style.backgroundColor;
+   mS10.style.backgroundColor = SB.style.backgroundColor;
+   mS20.style.backgroundColor = SB.style.backgroundColor;
+   mH10.style.backgroundColor = SB.style.backgroundColor;
+   mH20.style.backgroundColor = SB.style.backgroundColor;
+   mImgC0.src =  ImgC.src;
+
+   desMINquanIN10.value = quantinp.value;
+   Tpm10.textContent = eval( 399 * desMINquanIN10.value);
+
+
+
+   
+if(sizecode === 'M'){
+  mM10.style.border = "2px solid navy";
+  mL10.style.border = "none";
+  mXL10.style.border = "none";
+  mXXL10.style.border = "none";
+  minSize10 = 'M';
+}
+else if(sizecode === 'L'){
+  mM10.style.border = "none";
+  mL10.style.border = "2px solid navy";
+  mXL10.style.border = "none";
+  mXXL10.style.border = "none";
+  minSize10 = 'L';
+}
+else if(sizecode === 'XL'){
+  mM10.style.border = "none";
+  mL10.style.border = "none";
+  mXL10.style.border = "2px solid navy";
+  mXXL10.style.border = "none";
+  minSize10 = 'XL';
+}
+else if(sizecode === 'XXL'){
+  mM10.style.border = "none";
+  mL10.style.border = "none";
+  mXL10.style.border = "none";
+  mXXL10.style.border = "2px solid navy";
+  minSize10 = 'XXL';
+}
+minfnode10 = colorCode + desCode;
+minCode10.innerText = '#'+ minfnode10 + minSize10 +desMINquanIN10.value;
+}
+
+}
+
+
+const Buynowpopup = document.querySelector('.buynowpopup');
+const BuyB = document.querySelector('.buy');
+const Qinp = document.querySelector('.quaninp');
+
+
+function buyBF(){
+  Buynowpopup.style.display = 'block';
+  BuyB.style.display = ' none';
+  XXL.style.display =  'none';
+  XL.style.display =  'none';
+  
+  L.style.display =  'none';
+  M.style.display =  'none';
+  
+  Qinp.style.display = 'none';
+
+Psall.innerText = Code.innerText;
+
+Pynquanvalue.innerText = quantinp.value;
+
+Byntotalvalue.innerText = eval(399*Pynquanvalue.innerText);
+
+
+Bynnettotalvalue.textContent =eval(399*Pynquanvalue.innerText+ 100 );
+
+
+
+  
+}
+function Buypopcross(){
+
+  Buynowpopup.style.display = 'none'; 
+  BuyB.style.display = ' block';
+  XXL.style.display =  'block';
+  XL.style.display =  'block';
+  L.style.display =  'block';
+  M.style.display =  'block';
+  Qinp.style.display = 'block';
+}
+
+let Pmdoncvalue;
+
+function BNext(){
+  Buynowpopup.style.display = 'none';
+  Afterbnext.style.display = 'block';
+  Aftbnpsall.innerText = 'MY Products '+'(' +  Psall.textContent +')';
+  Aftbnq.innerText = 'Quantity' + '(' + Pynquanvalue.innerText +  ' pc' +')';
+  Aftbnt.innerText = 'Total' + '(' + Byntotalvalue.innerText + ' BDT'+ ')';
+  Aftbndc.innerText = 'Delivery Charge' + '(' + Byndcvalue.innerText  +' BDT'+')';
+  Aftbnnt.innerText = 'Net Total' + '(' + Bynnettotalvalue.textContent +  ' BDT'+')';
+
+  Aftbnname.innerText = 'Name' + '('+ Bynnameinputvalue.value + ')';
+  Aftbnnumber.innerText = 'Number' + '('+ Bynnumberinputvalue.value + ')';
+  Aftbnalnumber.innerText = 'Another Number' + '('+ Bynnumberalinputvalue.value + ')';
+  Aftbnemail.innerText = 'Email' + '('+ Bynemailinputvalue.value + ')';
+
+
+  Aftbnaddress.innerText = 'Address' + '(' + Houseinput.value + ', '+  Villageinput.value + ', '+Unioninput.value + ', '+Upazillainput.value + ', '+ Districtinput.value + ', '+Divisioninput.value +')';
+
+  Aftbnpmd.innerText = 'Payment Method' + '(' + Pmdoncvalue + ')';
+
+  Aftbninputforcopy.value = Afterbnexttext.innerText;
+}
+function BNextcross(){
+    Afterbnext.style.display = 'none';
+  Buynowpopup.style.display = 'block';
+ 
+
+}
+
+const Psall = document.querySelector('.psall');
+
+const Pynquanvalue = document.querySelector('.bynquanvalue');
+
+const Byntotalvalue = document.querySelector('.byntotalvalue');
+
+const Byndcvalue = document.querySelector('.byndcvalue');
+
+const Bynnettotalvalue = document.querySelector('.bynnettotalvalue');
+
+const Bynnameinput = document.querySelector('.bynnameinput');
+
+
+
+const Bynnameinputvalue = document.querySelector('.bynnameinputvalue');
+const bynnamesubmit = document.querySelector('.bynnamesubmit');
+
+
+
+const Bynnumberinput = document.querySelector('.bynnumberinput');
+
+Bynnumberinput.style.display = 'none';
+
+const Bynnumberinputvalue = document.querySelector('.bynnumberinputvalue');
+const Bynnumbersubmit = document.querySelector('.bynnumbersubmit');
+
+const Bynnumberalinput = document.querySelector('.bynnumberalinput');
+const Bynnumberalinputvalue = document.querySelector('.bynnumberalinputvalue');
+const Bynnumberalsubmit = document.querySelector('.bynnumberalsubmit');
+
+const Bynemailinput = document.querySelector('.bynemailinput');
+const Bynemailinputvalue = document.querySelector('.bynemailinputvalue');
+const Bynemailsubmit = document.querySelector('.bynemailinputvalue');
+
+
+const Dass = document.querySelector('.dass');
+const Enteraddress = document.querySelector('.enteraddress');
+const Enteraddressbtn = document.querySelector('.enteraddressbtn');
+
+const Division = document.querySelector('.division');
+const Divisioninput = document.querySelector('.divisioninput');
+const Divisionsubmit = document.querySelector('.divisionsubmit');
+
+
+const District = document.querySelector('.district');
+const Districtinput = document.querySelector('.disrictinput');
+const Districtsubmit = document.querySelector('.districtsubmit');
+
+const Upazilla = document.querySelector('.upazilla');
+const Upazillainput = document.querySelector('.upazillainput');
+const Upazillasubmit = document.querySelector('.upazillasubmit');
+
+const Union = document.querySelector('.union');
+const Unioninput = document.querySelector('.unioninput');
+const Unionsubmit = document.querySelector('.unionsubmit');
+
+const Village = document.querySelector('.village');
+const Villageinput = document.querySelector('.villageinput');
+const Villagesubmit = document.querySelector('.villagesubmit');
+
+const House = document.querySelector('.house');
+const Houseinput = document.querySelector('.houseinput');
+const Housesubmit = document.querySelector('.housesubmit');
+
+const Pmd = document.querySelector('.pmd');
+const Bnrcod = document.querySelector('.bnrcod');
+
+
+
+const Bkash = document.querySelector('.bkash');
+const Bkashinput = document.querySelector('.bkashinput');
+
+const Nagad = document.querySelector('.nagad');
+const Nagadinput = document.querySelector('.nagadinput');
+
+const Rocket = document.querySelector('.rocket');
+const Rocketinput = document.querySelector('.rocketinput');
+
+const Cashond = document.querySelector('.cashond');
+const Cashondinput = document.querySelector('.cashondinput');
+
+const Fignext = document.querySelector('.fnext');
+const Bignext = document.querySelector('.bignext');
+
+const Afterbnext = document.querySelector('.afterbnext');
+const Afterbnexttop = document.querySelector('.afterbnexttop');
+const Afterbnextcross = document.querySelector('.afterbnextcross');
+const Aftbnpsall= document.querySelector('.aftbnpsall');
+const Aftbnq= document.querySelector('.aftbnq');
+const Aftbnt= document.querySelector('.aftbnt');
+const Aftbndc= document.querySelector('.aftbndc');
+const Aftbnnt= document.querySelector('.aftbnnt');
+
+
+const Aftbnname= document.querySelector('.aftbnname');
+const Aftbnnumber= document.querySelector('.aftbnnumber');
+const Aftbnalnumber= document.querySelector('.aftbnalnumber');
+const Aftbnemail= document.querySelector('.aftbnemail');
+
+const Aftbnaddress= document.querySelector('.aftbnaddress');
+const Aftbnpmd = document.querySelector('.aftbnpmd');
+
+const Afterbnexttext = document.querySelector('.afterbnexttext');
+const Aftbninputforcopy = document.querySelector('.aftbninputforcopy');
+
+const Aftbninboxbtnlink = document.querySelector('.aftbninboxbtnlink');
+
+
+Bynnameinput.style.display = 'none';
+Bynnumberinput.style.display = 'none';
+Bynnumberalinput.style.display = 'none';
+Bynemailinput.style.display = 'none';
+
+Enteraddress.style.display = ' none';
+
+Division.style.display = 'none';
+District.style.display = 'none';
+Upazilla.style.display = 'none';
+Union.style.display = 'none';
+Village.style.display = 'none';
+House.style.display = 'none';
+
+
+Pmd.style.display = 'none';
+
+Bignext.style.display = 'none';
+
+
+
+Afterbnext.style.display = 'none';
+Aftbninboxbtnlink.style.display = 'none';
+
+
+
+
+
+
+
+
+
+// const Psall = document.querySelector('.psall');
+// const Psall = document.querySelector('.psall');
+// const Psall = document.querySelector('.psall');
+// const Psall = document.querySelector('.psall');
+// const Psall = document.querySelector('.psall');
+// const Psall = document.querySelector('.psall');
+// const Psall = document.querySelector('.psall');
+// const Psall = document.querySelector('.psall');
+// const Psall = document.querySelector('.psall');
+// const Psall = document.querySelector('.psall');
+// const Psall = document.querySelector('.psall');
+// const Psall = document.querySelector('.psall');
+// const Psall = document.querySelector('.psall');
+// const Psall = document.querySelector('.psall');
+// const Psall = document.querySelector('.psall');
+// const Psall = document.querySelector('.psall');
+// const Psall = document.querySelector('.psall');
+// const Psall = document.querySelector('.psall');
+// const Psall = document.querySelector('.psall');
+// const Psall = document.querySelector('.psall');
+// const Psall = document.querySelector('.psall');
+// const Psall = document.querySelector('.psall');
+// const Psall = document.querySelector('.psall');
+// const Psall = document.querySelector('.psall');
+// const Psall = document.querySelector('.psall');
+// const Psall = document.querySelector('.psall');
+// const Psall = document.querySelector('.psall');
+// const Psall = document.querySelector('.psall');
+// const Psall = document.querySelector('.psall');
+// const Psall = document.querySelector('.psall');
+
+function Aftbncopy(){
+  Aftbninputforcopy.select();
+  Aftbninputforcopy.setSelectionRange(0,99999);
+  navigator.clipboard.writeText(Aftbninputforcopy.value) ;
+  Aftbninboxbtnlink.style.display = 'block';
+ }
+  </script>
+</body>
+</html>
